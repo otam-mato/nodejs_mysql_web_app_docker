@@ -46,7 +46,6 @@ This is a Dockerfile for a Node.js application based on the Alpine Linux image v
 - It exposes port 3000.
 - It sets the command to run when a container is created from this image as "npm run start".
 
-<br><br>
 ```
 FROM node:11-alpine
 RUN mkdir -p /usr/src/app
@@ -56,7 +55,10 @@ RUN npm install
 EXPOSE 3000
 CMD ["npm", "run", "start"]
 ```
+<br><br>
 
+
+Push to GitHub
 ```
 git add .
 git commit -m "Docker file created"
@@ -65,9 +67,10 @@ git push -u origin
 # to unstage the changes
 # git reset
 
-git restore --staged ../../../Terraform_template/terraform.tfstate
-git restore --staged ../../../Terraform_template/terraform.tfstate.1675123997.backup
-git restore --staged ../../../Terraform_template/terraform.tfstate.backup
+# to unstage partially
+# git restore --staged ../../../Terraform_template/terraform.tfstate
+# git restore --staged ../../../Terraform_template/terraform.tfstate.1675123997.backup
+# git restore --staged ../../../Terraform_template/terraform.tfstate.backup
 
 # this is to resolve the issue with pull requests if arise
 git config pull.ff true
