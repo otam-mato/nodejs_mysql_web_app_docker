@@ -1,12 +1,7 @@
   
 # Docker_WebApp_NodeJS_AWS_RDS_MySql
 
-<<<<<<< HEAD
 In this project we will deploy the same web app from another project (bult with Node.JS/Express) from here: https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. Where it was deployed on EC2 and RDS instances.
-=======
-
-In this project we will deploy the same web app (bult with Node.JS/Express) from here: https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. Where it was deployed on EC2 and RDS instances.
->>>>>>> fa905580b4669cf6ae0a659ce79c0a0b7f40e669
 
 This time we will be using the containerization and deploy the app using Docker. One container will host the app, another container will host the MySql Database. In the end, we will place the Docker images in the AWS ECR (Elastic container registry) to be stored permanently there.
 
