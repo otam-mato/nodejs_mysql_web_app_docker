@@ -42,11 +42,8 @@ curl http://localhost:3000
 
 Adjust the security group of the AWS EC2 instance to allow network traffic on port 3000 from your computer.
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> b9945eb512fd2dedeaf908a8af58e5e1b557655c
 Open the <puplic_ip>:3000 in your browser (access the web interface of the application, which is now running in a container)
 
 
@@ -59,7 +56,6 @@ Open the <puplic_ip>:3000 in your browser (access the web interface of the appli
 - The docker build command then finished building the image according to the instructions in the Dockerfile, which resulted in the Docker image [e].
 - Finally, you ran the docker run command [f] to run a Docker container [g].
 
-<<<<<<< HEAD
 
 ```
 docker ps
@@ -90,5 +86,64 @@ cd /home/ec2-user/environment/containers
 mkdir mysql
 cd mysql
 ```
-=======
->>>>>>> b9945eb512fd2dedeaf908a8af58e5e1b557655c
+
+```
+touch Dockerfile
+cp /home/ec2-user/environment/resources/my_sql.sql .
+
+```
+
+```
+FROM mysql:8.0.23
+COPY ./my_sql.sql /
+EXPOSE 3306
+```
+
+```
+docker rmi -f $(docker image ls -a -q)
+sudo docker image prune -f && sudo docker container prune -f
+```
+
+```
+docker build --tag mysql_server .
+docker images
+docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=rootpw -d mysql_server
+docker container ls
+docker exec -i mysql_1 mysql -u root -p12345678 < my_sql.sql 
+
+docker exec -i mysql_1 mysql -u root  -p12345678 -e "CREATE USER 'nodeapp' IDENTIFIED WITH mysql_native_password BY '12345678'; GRANT all privileges on *.* to 'nodeapp'@'%';" 
+```
+
+```
+docker inspect network bridge
+
+#pass the discovered ip address of mysql_server
+docker run -d --name node_app_1 -p 3001:3000 -e APP_DB_HOST=172.17.0.2 node_app
+docker ps
+```
+
+```
+aws ecr get-login-password \
+--region us-east-1 | docker login --username AWS \
+--password-stdin <account-id>.dkr.ecr.us-east-1.amazonaws.com
+```
+
+```
+aws ecr create-repository --repository-name node-app
+
+docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+
+docker images
+
+docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+```
+
+```
+aws ecr list-images --repository-name node-app
+
+aws ecr batch-delete-image \
+     --repository-name node-app \
+     --image-ids imageTag=latest
+     
+aws ecr delete-repository --repository-name node-app
+```
