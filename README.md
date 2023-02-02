@@ -116,7 +116,7 @@ Paste the <puplic_ip>:3000 in your browser (access the web interface of the appl
 <br><br>
 <br><br>
 
-That is what you have done so far:
+That is what we have done so far:
 <br><br>
 <p align="center" >
   <img width="700" alt="Screenshot 2023-02-02 at 10 46 14" src="https://user-images.githubusercontent.com/104728608/216304326-f0d44a4b-37b2-4056-b22b-e2f01d749260.png">
