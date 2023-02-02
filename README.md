@@ -33,3 +33,6 @@ git pull
 ```
 docker build --tag node_app .
 ```
+
+<img width="672" alt="Screenshot 2023-02-02 at 10 46 14" src="https://user-images.githubusercontent.com/104728608/216304326-f0d44a4b-37b2-4056-b22b-e2f01d749260.png">
+
