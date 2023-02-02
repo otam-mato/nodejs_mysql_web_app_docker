@@ -159,8 +159,9 @@ Passing the env variable via CLI:
 ```
 docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST="<ip-address>" node_ap
 ```
+<br><br>
 
-using mysqldump backup the database from current host. In my case, I dumped the database from my AWS RDS instance.
+Download the mysql backup file using mysqldump. In my case, I dumped the database from my AWS RDS instance.
 ```
 mysqldump -P 3306 -h  <mysql-host-ip-address> -u nodeapp -p --databases COFFEE > ../../my_sql.sql
 ```
