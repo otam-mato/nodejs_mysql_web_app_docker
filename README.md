@@ -127,7 +127,7 @@ That is what you have done so far:
 <br><br>
 
 
-These commands will get you inside the container's shell to check your current env variables. You can place variables here or pass them with the CLI commands later.
+These commands will get you inside the container's shell to check your current env variables. You can place variables here or pass them with the CLI commands later. They are used later by the JS script to connect to the database.
 ```
 docker ps
 docker exec -ti 4e446ba88388  sh
@@ -146,15 +146,15 @@ APP_DB_NAME=COFFEE
 ```
 docker ps
 docker stop node_app_1 && docker rm node_app_1
-
 ```
+<br><br>
 
-passing the env variable
+Passing the env variable via CLI:
 ```
 docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST="<ip-address>" node_ap
 ```
 
-using mysqldump backup the database
+using mysqldump backup the database from current host. In this case
 ```
 mysqldump -P 3306 -h  <mysql-host-ip-address> -u nodeapp -p --databases COFFEE > ../../my_sql.sql
 ```
