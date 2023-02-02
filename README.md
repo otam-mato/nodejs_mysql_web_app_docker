@@ -119,8 +119,13 @@ That is what you have done so far:
 - You then ran the docker build command [b]. Docker read the Dockerfile and requested the starter image from an image repository [c]. The image repository returned the starter image file [d].
 - The docker build command then finished building the image according to the instructions in the Dockerfile, which resulted in the Docker image [e].
 - Finally, you ran the docker run command [f] to run a Docker container [g].
+<p align="center" >  
+  <img width="700" alt="Screenshot 2023-02-02 at 11 07 58" src="https://user-images.githubusercontent.com/104728608/216308903-d17880bb-4714-47d9-9070-267a6f02b6b8.png">
+</p>
+<br><br>
 
 
+These commands get you inside the container's shell to check your current env variables. You can place variables here or pass them with the CLI commands later.
 ```
 docker ps
 docker exec -ti 4e446ba88388  sh
@@ -128,7 +133,7 @@ whoami
 su node
 env
 ```
-<img width="700" alt="Screenshot 2023-02-02 at 11 07 58" src="https://user-images.githubusercontent.com/104728608/216308903-d17880bb-4714-47d9-9070-267a6f02b6b8.png">
+
 
 ```
 docker ps
