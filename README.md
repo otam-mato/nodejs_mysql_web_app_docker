@@ -108,6 +108,8 @@ Adjust the security group of the AWS EC2 instance to allow network traffic on po
 
 Paste the <puplic_ip>:3000 in your browser (access the web interface of the application, which is now running in a container)
 
+<br><br>
+
 That is what you have done so far:
 <br><br>
 <p align="center" >
