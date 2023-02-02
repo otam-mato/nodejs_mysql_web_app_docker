@@ -24,7 +24,7 @@ git push -u origin main
 ```
 
 <br><br>
-make the new directory, move the app files there and create the Dockerfile
+Make the new directory, move the app files there and create the Dockerfile
 ```
 mkdir containers
 cd containers
