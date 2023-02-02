@@ -1,11 +1,20 @@
   
 # Docker_WebApp_NodeJS_AWS_RDS_MySql
 
+<<<<<<< HEAD
 In this project we will deploy the same web app from another project (bult with Node.JS/Express) from here: https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. Where it was deployed on EC2 and RDS instances.
+=======
+
+In this project we will deploy the same web app (bult with Node.JS/Express) from here: https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. Where it was deployed on EC2 and RDS instances.
+>>>>>>> fa905580b4669cf6ae0a659ce79c0a0b7f40e669
 
 This time we will be using the containerization and deploy the app using Docker. One container will host the app, another container will host the MySql Database. In the end, we will place the Docker images in the AWS ECR (Elastic container registry) to be stored permanently there.
 
-
+<br><br>
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png">
+</p>
+<br><br>
 
 ```
 git -v
@@ -56,7 +65,12 @@ Adjust the security group of the AWS EC2 instance to allow network traffic on po
 Open the <puplic_ip>:3000 in your browser (access the web interface of the application, which is now running in a container)
 
 That is what you have done so far:
-<img width="700" alt="Screenshot 2023-02-02 at 10 46 14" src="https://user-images.githubusercontent.com/104728608/216304326-f0d44a4b-37b2-4056-b22b-e2f01d749260.png">
+
+<br><br>
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-02 at 10 46 14" src="https://user-images.githubusercontent.com/104728608/216304326-f0d44a4b-37b2-4056-b22b-e2f01d749260.png">
+</p>
+<br><br>
 
 - You copied the code base into a directory, which acted as your build area [a]. You also created a Dockerfile that provided instructions for how to create a Docker image. That Dockerfile specified a FROM instruction that identified a starter image to use.
 - You then ran the docker build command [b]. Docker read the Dockerfile and requested the starter image from an image repository [c]. The image repository returned the starter image file [d].
