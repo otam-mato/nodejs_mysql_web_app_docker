@@ -29,3 +29,7 @@ git restore --staged ../../../Terraform_template/terraform.tfstate.backup
 git config pull.ff true
 git pull
 ```
+
+```
+docker build --tag node_app .
+```
