@@ -34,6 +34,7 @@ git pull
 
 ```
 docker build --tag node_app .
+<<<<<<< HEAD
 docker images
 docker run -d --name node_app_1 -p 3000:3000 node_app
 docker container ls
@@ -43,3 +44,9 @@ curl http://localhost:3000
 Adjust the security group of the AWS EC2 instance to allow network traffic on port 3000 from your computer.
 
 Open the <puplic_ip>:3000 in your browser (access the web interface of the application, which is now running in a containe)
+=======
+```
+
+<img width="672" alt="Screenshot 2023-02-02 at 10 46 14" src="https://user-images.githubusercontent.com/104728608/216304326-f0d44a4b-37b2-4056-b22b-e2f01d749260.png">
+
+>>>>>>> 9c303e834199475e8086381d5fe39d65c58f4d48
