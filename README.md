@@ -21,4 +21,11 @@ touch Dockerfile
 git add .
 git commit -m "Docker file created"
 git push -u origin
+
+git restore --staged ../../../Terraform_template/terraform.tfstate
+git restore --staged ../../../Terraform_template/terraform.tfstate.1675123997.backup
+git restore --staged ../../../Terraform_template/terraform.tfstate.backup
+
+git config pull.ff true
+git pull
 ```
