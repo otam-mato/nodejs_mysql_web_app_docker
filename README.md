@@ -127,7 +127,7 @@ That is what you have done so far:
 <br><br>
 
 
-These commands get you inside the container's shell to check your current env variables. You can place variables here or pass them with the CLI commands later.
+These commands will get you inside the container's shell to check your current env variables. You can place variables here or pass them with the CLI commands later.
 ```
 docker ps
 docker exec -ti 4e446ba88388  sh
@@ -135,7 +135,13 @@ whoami
 su node
 env
 ```
-
+Here are the variables:
+```
+APP_DB_HOST=<paste here the output endpoint of the created RDS instance> 
+APP_DB_USER=admin 
+APP_DB_PASSWORD="<your password>" 
+APP_DB_NAME=COFFEE
+```
 
 ```
 docker ps
