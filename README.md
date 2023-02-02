@@ -84,6 +84,15 @@ this is your directory tree in Cloud9:
   <img width="846" alt="Screenshot 2023-02-02 at 19 07 53" src="https://user-images.githubusercontent.com/104728608/216427012-f5721567-4be6-4a0c-8cb7-ecf44bbfcd8f.png">
 </p>
 <br><br>
+<br><br>
+
+These commands are used to create and run a Docker container for a Node.js application.
+
+docker build --tag node_app . builds a Docker image using the Dockerfile in the current directory with the tag "node_app".
+docker images lists all the Docker images present on the system.
+docker run -d --name node_app_1 -p 3000:3000 node_app runs a Docker container in the background with the name "node_app_1", maps host port 3000 to container port 3000 and uses the image "node_app".
+docker container ls lists all running containers.
+curl http://localhost:3000 sends a HTTP request to the URL "http://localhost:3000" and returns the response. This can be used to test if the Node.js application is running correctly inside the container.
 
 ```
 docker build --tag node_app .
