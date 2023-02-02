@@ -5,7 +5,11 @@ In this project we will deploy the same web app (bult with Node.JS/Express) from
 
 This time we will be using the containerization and deploy the app using Docker. One container will host the app, another container will host the MySql Database. In the end, we will place the Docker images in the AWS ECR (Elastic container registry) to be stored permanently there.
 
-
+<br><br>
+<p align="center" >
+  <img src="images/Screenshot 2023-02-01 at 20.11.38.png" width="700px"/>
+</p>
+<br><br>
 
 ```
 git -v
