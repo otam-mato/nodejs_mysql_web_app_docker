@@ -7,7 +7,7 @@ This time we will be using the containerization and deploy the app using Docker.
 
 <br><br>
 <p align="center" >
-  <img src="[images/Screenshot 2023-02-01 at 20.11.38.png](https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql/tree/main/images)" width="700px"/>
+  <img src="https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql/tree/main/images" width="700px"/>
 </p>
 <br><br>
 
