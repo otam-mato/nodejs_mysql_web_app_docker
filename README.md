@@ -11,6 +11,7 @@ This time we will be using the containerization and deploy the app using Docker.
 </p>
 <br><br>
 
+launch IDE (I am using AWS Cloud9), initiate git locally, make the first push to GitHub and
 ```
 git -v
 echo "# Docker_WebApp_NodeJS_AWS_RDS_MySql" >> README.md
@@ -41,9 +42,16 @@ git restore --staged ../../../Terraform_template/terraform.tfstate
 git restore --staged ../../../Terraform_template/terraform.tfstate.1675123997.backup
 git restore --staged ../../../Terraform_template/terraform.tfstate.backup
 
+# this is to resolve the issue with pull requests if arise
 git config pull.ff true
 git pull
 ```
+this is how your directory tree will be look like after the above steps are done:
+<br><br>
+<p align="center" >
+  <img width="846" alt="Screenshot 2023-02-02 at 19 07 53" src="https://user-images.githubusercontent.com/104728608/216427012-f5721567-4be6-4a0c-8cb7-ecf44bbfcd8f.png">
+</p>
+<br><br>
 
 ```
 docker build --tag node_app .
