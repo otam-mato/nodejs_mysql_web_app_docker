@@ -1,6 +1,12 @@
   
 # Docker_WebApp_NodeJS_AWS_RDS_MySql
 
+In this project we will deploy the same web app (bult with Node.JS/Express) from here: https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. Where it was deployed on EC2 and RDS instances.
+
+This time we will be using the containerization and deploy the app using Docker. One container will host the app, another container will host the MySql Database. In the end, we will place the Docker images in the AWS ECR (Elastic container registry) to be stored permanently there.
+
+
+
 ```
 git -v
 echo "# Docker_WebApp_NodeJS_AWS_RDS_MySql" >> README.md
@@ -23,6 +29,9 @@ touch Dockerfile
 git add .
 git commit -m "Docker file created"
 git push -u origin
+
+# to unstage the changes
+# git reset
 
 git restore --staged ../../../Terraform_template/terraform.tfstate
 git restore --staged ../../../Terraform_template/terraform.tfstate.1675123997.backup
