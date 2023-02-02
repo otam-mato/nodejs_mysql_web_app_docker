@@ -11,7 +11,7 @@ This time we will be using the containerization and deploy the app using Docker.
 </p>
 <br><br>
 
-launch IDE (I am using AWS Cloud9), initiate git locally, make the first push to GitHub
+Launch IDE (I am using AWS Cloud9), initiate git locally, make the first push to GitHub
 ```
 git -v
 echo "# Docker_WebApp_NodeJS_AWS_RDS_MySql" >> README.md
@@ -23,6 +23,7 @@ git remote add origin <https://github.com/.......place here your GitHub reposito
 git push -u origin main
 ```
 
+<br><br>
 make the new directory, move the app files there and create the Dockerfile
 ```
 mkdir containers
@@ -33,6 +34,7 @@ mv ~/environment/resources/codebase_partner ~/environment/containers/node_app
 cd ~/environment/containers/node_app/codebase_partner
 touch Dockerfile
 ```
+<br><br>
 
 This is a Dockerfile for a Node.js application based on the Alpine Linux image version 11. The Dockerfile performs the following steps:
 
@@ -44,6 +46,7 @@ This is a Dockerfile for a Node.js application based on the Alpine Linux image v
 - It exposes port 3000.
 - It sets the command to run when a container is created from this image as "npm run start".
 
+<br><br>
 ```
 FROM node:11-alpine
 RUN mkdir -p /usr/src/app
