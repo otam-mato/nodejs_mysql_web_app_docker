@@ -95,6 +95,7 @@ These commands are used to create and run a Docker container for a Node.js appli
 - curl http://localhost:3000 sends a HTTP request to the URL "http://localhost:3000" and returns the response. This can be used to test if the Node.js application is running correctly inside the container.
 
 <br>
+
 ```
 docker build --tag node_app .
 docker images
