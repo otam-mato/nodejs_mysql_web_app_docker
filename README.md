@@ -78,8 +78,8 @@ git pull
 ```
 
 <br><br>
-this is your directory tree in Cloud9:
-<br><br>
+This is a directory tree in my Cloud9 after all the above id done:
+<br>
 <p align="center" >
   <img width="846" alt="Screenshot 2023-02-02 at 19 07 53" src="https://user-images.githubusercontent.com/104728608/216427012-f5721567-4be6-4a0c-8cb7-ecf44bbfcd8f.png">
 </p>
