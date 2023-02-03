@@ -177,18 +177,29 @@ Download the mysql backup file using mysqldump. In my case, I dumped the databas
 mysqldump -P 3306 -h  <mysql-host-ip-address> -u nodeapp -p --databases COFFEE > ../../my_sql.sql
 ```
 
+<br><br>
+Navigate to "containers" and create a mysql folder
 ```
 cd /home/ec2-user/environment/containers
 mkdir mysql
 cd mysql
 ```
+<br><br>
 
+Create a Dockerfile and copy a my_sql.sql file to current directory
 ```
 touch Dockerfile
 cp /home/ec2-user/environment/resources/my_sql.sql .
-
+vi Dockerfile
 ```
 
+Insert these instructions in a Dockerfile, which afterfards will be used to build an image of a containerized application.
+
+FROM mysql:8.0.23 specifies that the base image for the container is the official MySQL image version 8.0.23.
+
+COPY ./my_sql.sql / copies a file named my_sql.sql from the local file system to the root directory / inside the container.
+
+EXPOSE 3306 informs Docker that the container listens on the specified network port at runtime. In this case, the MySQL service in the container will listen on port 3306.
 ```
 FROM mysql:8.0.23
 COPY ./my_sql.sql /
