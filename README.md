@@ -211,12 +211,6 @@ EXPOSE 3306
 
 <br><br>
 
-<br><br>
-```
-docker rmi -f $(docker image ls -a -q)
-sudo docker image prune -f && sudo docker container prune -f
-```
-
 Execute these Docker commands to perform the following actions:
 - Build a Docker image named "mysql_server" from the current directory using the "docker build" command.
 - List all Docker images on the system using the "docker images" command.
@@ -305,7 +299,8 @@ aws ecr delete-repository --repository-name node_app
 ```
 <br><br>
 This is to clear Docker images in the system
+<br><br>
 ```
-docker ps
-docker stop node_app_1 && docker rm node_app_1
+docker rmi -f $(docker image ls -a -q)
+sudo docker image prune -f && sudo docker container prune -f
 ```
