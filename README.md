@@ -11,7 +11,7 @@ This time, we're taking a different approach by using containerization and deplo
 </p>
 <br><br>
 
-Launch your IDE (I am using AWS Cloud9), download the archive with project files and untar them in the home/ec2-user/environment
+Launch your IDE (I am using AWS Cloud9), download the archive with project files and extract them in the home/ec2-user/environment
 ```
 wget https://github.com/otammato/Docker_WebApp_NodeJS_AWS_RDS_MySql/blob/main/Docker_WebApp_NodeJS_AWS_RDS_MySql.tar.gz
 
@@ -240,6 +240,10 @@ docker exec -i mysql_1 mysql -u root  -p12345678 -e "CREATE USER 'nodeapp' IDENT
 ```
 
 <br><br>
+Run these commands:
+- to display detailed information about the default "bridge" network in Docker.
+- to run a Docker container in the background (detached mode) seting an environment variable APP_DB_HOST to 172.17.0.2 (discovered by the previous comand):
+- to list all the running Docker containers on your system.
 ```
 docker inspect network bridge
 
