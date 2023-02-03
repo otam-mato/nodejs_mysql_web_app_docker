@@ -124,6 +124,11 @@ Adjust the security group of the AWS EC2 instance to allow network traffic on po
 Paste the <puplic_ip>:3000 in your browser (access the web interface of the application, which is now running in a container)
 <br><br>
 <br><br>
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png">
+</p>
+<br><br>
+<br><br>
 
 That is what we have done so far:
 <br><br>
