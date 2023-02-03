@@ -37,7 +37,7 @@ git push -u origin main
 ```
 
 <br><br>
-Make the new directory, move the app files there and create the Dockerfile for your app.
+Make the new directory for containers, move the app files there and create the first Dockerfile for your app.
 ```
 mkdir containers
 cd containers
@@ -193,7 +193,7 @@ cd mysql
 ```
 <br><br>
 
-Create a Dockerfile for MySQL and copy a my_sql.sql file to the current directory
+Create a second Dockerfile for MySQL and copy a my_sql.sql file to the current directory
 ```
 touch Dockerfile
 cp /home/ec2-user/environment/resources/my_sql.sql .
