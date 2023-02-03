@@ -193,7 +193,8 @@ cp /home/ec2-user/environment/resources/my_sql.sql .
 vi Dockerfile
 ```
 
-Insert these instructions in a Dockerfile, which afterfards will be used to build an image of a containerized application.
+<br><br>
+Insert these instructions in a Dockerfile, which will be used to build an image of a containerized application.
 
 FROM mysql:8.0.23 specifies that the base image for the container is the official MySQL image version 8.0.23.
 
