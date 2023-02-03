@@ -21,7 +21,7 @@ tar -xzvf Docker_WebApp_NodeJS_AWS_RDS_MySql.tar.gz
 <br><br>
 
 
-Initiate git locally, make the first push to GitHub
+Initiate git locally, set up your remote GitHub repository and make the first push to GitHub:
 ```
 git -v
 git init
