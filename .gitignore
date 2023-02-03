@@ -1,0 +1,23 @@
+Terraform_template/.terraform.lock.hcl
+Terraform_template/.terraform/providers/registry.terraform.io/hashicorp/aws/4.52.0/linux_amd64/terraform-provider-aws_v4.52.0_x5
+Terraform_template/.terraform/providers/registry.terraform.io/hashicorp/null/3.2.1/linux_amd64/terraform-provider-null_v3.2.1_x5
+Terraform_template/terraform.tfstate
+Terraform_template/terraform.tfstate.1675123997.backup
+Terraform_template/terraform.tfstate.backup
+resources/setup.sh
+.c9/.nakignore
+.c9/Docker Node.JS MySql /meta.json
+.c9/amazonwebservices.aws-toolkit-vscode/cloudformation.schema.json
+.c9/amazonwebservices.aws-toolkit-vscode/devfile.schema.json
+.c9/amazonwebservices.aws-toolkit-vscode/sam.schema.json
+.c9/launch.json
+.c9/metadata/environment/README.md
+.c9/metadata/environment/Untitled1
+.c9/metadata/environment/containers/mysql/Dockerfile
+.c9/metadata/environment/containers/node_app/codebase_partner/Dockerfile
+.c9/metadata/environment/resources/codebase_partner/app/config/config.js
+.c9/metadata/environment/resources/codebase_partner/app/controller/supplier.controller.js
+.c9/metadata/environment/resources/codebase_partner/app/models/supplier.model.js
+.c9/out_of_memory
+.c9/project.settings
+.c9/tasks.json

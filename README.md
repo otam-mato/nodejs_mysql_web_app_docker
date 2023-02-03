@@ -24,6 +24,7 @@ Initiate git locally, make the first push to GitHub
 ```
 git -v
 git init
+git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin <https://github.com/.......place here your GitHub repository...................>
@@ -85,7 +86,7 @@ git pull
 ```
 
 <br><br>
-This is a directory tree in my Cloud9 after all the above id done:
+This is a directory tree in my Cloud9 after all the above is done:
 <br>
 <p align="center" >
   <img width="846" alt="Screenshot 2023-02-02 at 19 07 53" src="https://user-images.githubusercontent.com/104728608/216427012-f5721567-4be6-4a0c-8cb7-ecf44bbfcd8f.png">
@@ -93,7 +94,7 @@ This is a directory tree in my Cloud9 after all the above id done:
 <br><br>
 <br><br>
 
-Navigate to /containers/node_app and run these commands to create and run a Docker container for the Node.js application:
+These commands are used to create and run a Docker container for a Node.js application:
 
 - docker build --tag node_app . builds a Docker image using the Dockerfile in the current directory with the tag "node_app".
 - docker images lists all the Docker images present on the system.
@@ -168,7 +169,14 @@ docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST="<ip-address>" node_
 ```
 <br><br>
 
+<<<<<<<<< saved version
+
 Download the mysql backup file using mysqldump. In my case, I dumped the database from my AWS RDS instance.
+
+Download the mysql backup file using mysqldump. In my case, I dumped the database from my AWS RDS instance.
+=========
+using mysqldump backup the database from current host. In my case, I dumped the database from my AWS RDS instance.
+>>>>>>>>> local version
 ```
 mysqldump -P 3306 -h  <mysql-host-ip-address> -u nodeapp -p --databases COFFEE > ../../my_sql.sql
 ```
