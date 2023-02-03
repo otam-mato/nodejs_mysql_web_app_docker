@@ -1,5 +1,5 @@
   
-# Docker_WebApp_NodeJS_AWS_RDS_MySql
+# Docker_WebApp_NodeJS_AWS_RDS_MySql (the page is under development)
 
 For this project, we'll be deploying a web app from another project (built using Node.JS and Express) located at https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. The previous deployment was done on EC2 and RDS instances.
 
