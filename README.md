@@ -188,7 +188,7 @@ cd mysql
 ```
 <br><br>
 
-Create a Dockerfile and copy a my_sql.sql file to current directory
+Create a Dockerfile for MySQL and copy a my_sql.sql file to the current directory
 ```
 touch Dockerfile
 cp /home/ec2-user/environment/resources/my_sql.sql .
@@ -208,17 +208,15 @@ FROM mysql:8.0.23
 COPY ./my_sql.sql /
 EXPOSE 3306
 ```
-<<<<<<<<< saved version
+
 <br><br>
-=========
+
 <br><br>
 ```
 docker rmi -f $(docker image ls -a -q)
 sudo docker image prune -f && sudo docker container prune -f
 ```
->>>>>>>>> local version
 
-<<<<<<<<< saved version
 Execute these Docker commands to perform the following actions:
 - Build a Docker image named "mysql_server" from the current directory using the "docker build" command.
 - List all Docker images on the system using the "docker images" command.
@@ -226,9 +224,6 @@ Execute these Docker commands to perform the following actions:
 - List all running Docker containers using the "docker container ls" command.
 - Execute a SQL script named "my_sql.sql" into the running "mysql_1" container as the MySQL root user with the password 12345678 using the "docker exec" command.
 - Execute an SQL command to create a new MySQL user named "nodeapp" with password 12345678 and grant all privileges to the user on all databases using the "docker exec" command.
-=========
-<br><br>
->>>>>>>>> local version
 ```
 docker build --tag mysql_server .
 docker images
@@ -251,7 +246,17 @@ docker inspect network bridge
 docker run -d --name node_app_1 -p 3001:3000 -e APP_DB_HOST=172.17.0.2 node_app
 docker ps
 ```
+<br><br>
 
+Check the functionality of the app:
+- load the ip address in your web browser
+- click at "suppliers link" to test the interaction with MySQL Database
+
+
+
+
+Finally, we 
+This is AWS CLI command connects you to ECR registry. After completed you got a message of the result of login
 ```
 aws ecr get-login-password \
 --region us-east-1 | docker login --username AWS \
