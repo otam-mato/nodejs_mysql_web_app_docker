@@ -310,7 +310,7 @@ aws ecr delete-repository --repository-name node_app
 ```
 
 <br><br>
-This is to clear Docker images in the system
+This is to clear Docker images locally
 ```
 docker rmi -f $(docker image ls -a -q)
 sudo docker image prune -f && sudo docker container prune -f
