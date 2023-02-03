@@ -251,30 +251,45 @@ docker ps
 Check the functionality of the app:
 - load the ip address in your web browser
 - click at "suppliers link" to test the interaction with MySQL Database
-
-<br><br>
+<br>
 <p align="center" >
-  <img width="1261" alt="Screenshot 2023-01-31 at 19 23 50" src="https://user-images.githubusercontent.com/104728608/216671663-056aa8d3-ad4e-4e86-bf6e-d84ad7cfff6c.png">
+  <img width="700" alt="Screenshot 2023-01-31 at 19 23 50" src="https://user-images.githubusercontent.com/104728608/216672050-8dea2615-03aa-426b-b3c5-75fd1460a958.png">
 </p>
 <br><br>
 
-Finally, we 
-This is AWS CLI command connects you to ECR registry. After completed you got a message of the result of login
+Finally, we push the app images to AWS ECR registry.
+This is AWS CLI command connects you to ECR registry. After completion you get a message with the result of login:
 ```
 aws ecr get-login-password \
 --region us-east-1 | docker login --username AWS \
 --password-stdin <account-id>.dkr.ecr.us-east-1.amazonaws.com
 ```
 
+<br><br>
+The first command "aws ecr create-repository --repository-name node-app" creates an Amazon Elastic Container Registry (ECR) repository with the name "node-app". This repository is used to store Docker images.
 
+The second command "docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest" creates a new tag for the Docker image "node_app" with the name "latest" and associates it with the ECR repository "node-app" in the us-east-1 region. The "account_id" placeholder should be replaced with the actual AWS account ID.
+
+The third command "docker tag mysql:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/mysql:latest" creates a new tag for the Docker image "mysql" with the name "latest" and associates it with the ECR repository "mysql" in the us-east-1 region.
+
+The fourth command "docker images" lists all the available Docker images on your system.
+
+The fifth command "docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest" pushes the "node_app" Docker image with the tag "latest" to the "node-app" repository in AWS ECR.
+
+The final command "docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/mysql:latest" pushes the "mysql" Docker image with the tag "latest" to the "mysql" repository in AWS ECR.
 ```
 aws ecr create-repository --repository-name node-app
 
 docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
 
+docker tag mysql:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+
 docker images
 
 docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+
+docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/mysql:latest
+
 ```
 
 ```
