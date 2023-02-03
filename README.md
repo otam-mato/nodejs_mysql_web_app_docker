@@ -163,10 +163,7 @@ APP_DB_PASSWORD="<your password>"
 APP_DB_NAME=COFFEE
 ```
 
-```
-docker ps
-docker stop node_app_1 && docker rm node_app_1
-```
+
 <br><br>
 
 Passing the env variable via CLI:
@@ -259,4 +256,10 @@ aws ecr batch-delete-image \
      --image-ids imageTag=latest
      
 aws ecr delete-repository --repository-name node-app
+```
+<br><br>
+This is to clear Docker images in the system
+```
+docker ps
+docker stop node_app_1 && docker rm node_app_1
 ```
