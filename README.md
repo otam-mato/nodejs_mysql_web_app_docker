@@ -171,7 +171,7 @@ APP_DB_NAME=COFFEE
 
 <br><br>
 
-Alternatively, passing the env variable via CLI with a dockker command:
+Alternatively, passing the env variable via CLI with a docker command:
 ```
 docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST="<ip-address>" node_ap
 ```
