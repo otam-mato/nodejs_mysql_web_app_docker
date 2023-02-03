@@ -266,40 +266,42 @@ aws ecr get-login-password \
 ```
 
 <br><br>
-The first command "aws ecr create-repository --repository-name node-app" creates an Amazon Elastic Container Registry (ECR) repository with the name "node-app". This repository is used to store Docker images.
+This series of commands creates an Amazon Elastic Container Registry (ECR) repository named "node_app", tags two Docker images, "node_app" and "mysql_server", with custom tags, and pushes the images to the ECR repository.
 
-The second command "docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest" creates a new tag for the Docker image "node_app" with the name "latest" and associates it with the ECR repository "node-app" in the us-east-1 region. The "account_id" placeholder should be replaced with the actual AWS account ID.
+- The command "aws ecr create-repository --repository-name node_app" creates an ECR repository with the name "node_app".
 
-The third command "docker tag mysql:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/mysql:latest" creates a new tag for the Docker image "mysql" with the name "latest" and associates it with the ECR repository "mysql" in the us-east-1 region.
+- The command "docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node_app:node_app" creates a new tag for the Docker image "node_app" with the name "node_app" and associates it with the ECR repository "node_app" in the us-east-1 region.
 
-The fourth command "docker images" lists all the available Docker images on your system.
+- The command "docker tag mysql_server:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node_app:mysql_server" creates a new tag for the Docker image "mysql_server" with the name "mysql_server" and associates it with the same ECR repository "node_app" in the us-east-1 region.
 
-The fifth command "docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest" pushes the "node_app" Docker image with the tag "latest" to the "node-app" repository in AWS ECR.
+- The command "docker images" lists all the available Docker images on your system.
 
-The final command "docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/mysql:latest" pushes the "mysql" Docker image with the tag "latest" to the "mysql" repository in AWS ECR.
+- The command "docker push 810453367775.dkr.ecr.us-east-1.amazonaws.com/node_app:node_app" pushes the "node_app" Docker image with the tag "node_app" to the "node_app" repository in AWS ECR.
+
+- The command "docker push 810453367775.dkr.ecr.us-east-1.amazonaws.com/node_app:mysql_server" pushes the "mysql_server" Docker image with the tag "mysql_server" to the same "node_app" repository in AWS ECR.
 ```
-aws ecr create-repository --repository-name node-app
+aws ecr create-repository --repository-name node_app
 
-docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+docker tag node_app:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node_app:node_app
 
-docker tag mysql:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+docker tag mysql_server:latest <account_id>.dkr.ecr.us-east-1.amazonaws.com/node_app:mysql_server
 
 docker images
 
-docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+docker push 810453367775.dkr.ecr.us-east-1.amazonaws.com/node_app:node_app
 
-docker push <account_id>.dkr.ecr.us-east-1.amazonaws.com/mysql:latest
-
-```
+docker push 810453367775.dkr.ecr.us-east-1.amazonaws.com/node_app:mysql_server
 
 ```
-aws ecr list-images --repository-name node-app
+
+```
+aws ecr list-images --repository-name node_app
 
 aws ecr batch-delete-image \
-     --repository-name node-app \
+     --repository-name node_app \
      --image-ids imageTag=latest
      
-aws ecr delete-repository --repository-name node-app
+aws ecr delete-repository --repository-name node_app
 ```
 <br><br>
 This is to clear Docker images in the system
