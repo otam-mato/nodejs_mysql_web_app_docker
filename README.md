@@ -237,7 +237,7 @@ Run these commands:
 docker inspect network bridge
 
 #pass the discovered ip address of mysql_server
-docker run -d --name node_app_1 -p 3001:3000 -e APP_DB_HOST=172.17.0.2 node_app
+docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST=172.17.0.2 node_app
 docker ps
 ```
 <br><br>
@@ -285,9 +285,16 @@ docker images
 docker push 810453367775.dkr.ecr.us-east-1.amazonaws.com/node_app:node_app
 
 docker push 810453367775.dkr.ecr.us-east-1.amazonaws.com/node_app:mysql_server
-
 ```
 
+<br><br>
+- This series of commands performs the following actions on an Amazon Elastic Container Registry (ECR) repository named "node_app":
+
+- The command "aws ecr list-images --repository-name node_app" lists all the images in the "node_app" repository in AWS ECR.
+
+- The command "aws ecr batch-delete-image \ --repository-name node_app \ --image-ids imageTag=latest" deletes all images in the "node_app" repository with the tag "latest".
+
+- The command "aws ecr delete-repository --repository-name node_app" deletes the entire "node_app" repository from AWS ECR.
 ```
 aws ecr list-images --repository-name node_app
 
@@ -297,6 +304,7 @@ aws ecr batch-delete-image \
      
 aws ecr delete-repository --repository-name node_app
 ```
+
 <br><br>
 This is to clear Docker images in the system
 <br><br>
