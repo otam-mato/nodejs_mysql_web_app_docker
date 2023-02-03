@@ -229,9 +229,9 @@ docker exec -i mysql_1 mysql -u root  -p12345678 -e "CREATE USER 'nodeapp' IDENT
 
 <br><br>
 Run these commands:
--to display detailed information about the default "bridge" network in Docker.
--to run a Docker container in the background (detached mode) seting an environment variable APP_DB_HOST to 172.17.0.2 (discovered by the previous comand):
--to will list all the running Docker containers on your system.
+- to display detailed information about the default "bridge" network in Docker.
+- to run a Docker container in the background (detached mode) seting an environment variable APP_DB_HOST to 172.17.0.2 (discovered by the previous comand):
+- to will list all the running Docker containers on your system.
 ```
 docker inspect network bridge
 
