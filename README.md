@@ -255,8 +255,8 @@ Check the functionality of the app:
 </p>
 <br><br>
 
-Finally, we push the app images to AWS ECR registry.
-This is AWS CLI command connects you to ECR registry. After completion you get a message with the result of login:
+Finally, we push the app images to AWS ECR repository.
+This is AWS CLI command connects you to ECR repository. After completion you get a message with the result of login:
 ```
 aws ecr get-login-password \
 --region us-east-1 | docker login --username AWS \
