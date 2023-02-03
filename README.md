@@ -208,22 +208,26 @@ FROM mysql:8.0.23
 COPY ./my_sql.sql /
 EXPOSE 3306
 ```
+<br><br>
 
-```
-docker rmi -f $(docker image ls -a -q)
-sudo docker image prune -f && sudo docker container prune -f
-```
-
+Execute these Docker commands to perform the following actions:
+- Build a Docker image named "mysql_server" from the current directory using the "docker build" command.
+- List all Docker images on the system using the "docker images" command.
+- Run a Docker container named "mysql_1" from the "mysql_server" image, mapping port 3306 in the container to port 3306 on the host, setting the MySQL root password as 12345678, and running the container in the background using the "docker run" command.
+- List all running Docker containers using the "docker container ls" command.
+- Execute a SQL script named "my_sql.sql" into the running "mysql_1" container as the MySQL root user with the password 12345678 using the "docker exec" command.
+- Execute an SQL command to create a new MySQL user named "nodeapp" with password 12345678 and grant all privileges to the user on all databases using the "docker exec" command.
 ```
 docker build --tag mysql_server .
 docker images
-docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=rootpw -d mysql_server
+docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=12345678 -d mysql_server
 docker container ls
 docker exec -i mysql_1 mysql -u root -p12345678 < my_sql.sql 
 
 docker exec -i mysql_1 mysql -u root  -p12345678 -e "CREATE USER 'nodeapp' IDENTIFIED WITH mysql_native_password BY '12345678'; GRANT all privileges on *.* to 'nodeapp'@'%';" 
 ```
 
+<br><br>
 ```
 docker inspect network bridge
 
