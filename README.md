@@ -178,7 +178,7 @@ docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST="<ip-address>" node_
 <br><br>
 
 
-Make this command to export the database named "COFFEE" from a MySQL server running on the host with IP address "mysql-host-ip-address" on port 3306. The command is executed using the "mysqldump" tool and the output is saved to the file "my_sql.sql" in a parent directory of the current directory. The user connecting to the MySQL server is "nodeapp" and the password is prompted for during the execution of the command.
+Execute this command to export the database named "COFFEE" from a MySQL server running on the host with IP address "mysql-host-ip-address" on port 3306. The command is executed using the "mysqldump" tool and the output is saved to the file "my_sql.sql" in a parent directory of the current directory. The user connecting to the MySQL server is "nodeapp" and the password is prompted for during the execution of the command.
 ```
 mysqldump -P 3306 -h  <mysql-host-ip-address> -u nodeapp -p --databases COFFEE > ../../my_sql.sql
 ```
