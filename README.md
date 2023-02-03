@@ -30,7 +30,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin <https://github.com/.......place here your GitHub repository...................>
 
-# Set the cache of username and password to timeout after 1 hour (setting is in seconds)
+# To avoid the need to input username and password for each push, set the caching of username and password to timeout after 1 hour (setting is in seconds)
 $ git config --global credential.helper 'cache --timeout=3600' 
 
 git push -u origin main
