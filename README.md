@@ -11,12 +11,17 @@ This time, we're taking a different approach by using containerization and deplo
 </p>
 <br><br>
 
-Launch IDE (I am using AWS Cloud9), initiate git locally, make the first push to GitHub
+Launch your IDE (I am using AWS Cloud9), download the archive with project files and untar them in home/ec2-user/environment
+```
+wget https://github.com/otammato/Docker_WebApp_NodeJS_AWS_RDS_MySql/blob/main/Docker_WebApp_NodeJS_AWS_RDS_MySql.tar.gz
+
+tar -xzvf Docker_WebApp_NodeJS_AWS_RDS_MySql.tar.gz
+```
+
+ initiate git locally, make the first push to GitHub
 ```
 git -v
-echo "# Docker_WebApp_NodeJS_AWS_RDS_MySql" >> README.md
 git init
-git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin <https://github.com/.......place here your GitHub repository...................>
