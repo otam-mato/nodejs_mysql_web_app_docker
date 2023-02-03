@@ -102,11 +102,11 @@ This is a directory tree in my Cloud9 after all the above is done:
 
 Run these commands to build and run the Docker container for a Node.js application:
 
-- docker build --tag node_app . builds a Docker image using the Dockerfile in the current directory with the tag "node_app".
-- docker images lists all the Docker images present on the system.
-- docker run -d --name node_app_1 -p 3000:3000 node_app runs a Docker container in the background with the name "node_app_1", maps host port 3000 to container port 3000 and uses the image "node_app".
-- docker container ls lists all running containers.
-- curl http://localhost:3000 sends a HTTP request to the URL "http://localhost:3000" and returns the response. This can be used to test if the Node.js application is running correctly inside the container.
+- "docker build --tag node_app ." builds a Docker image using the Dockerfile in the current directory with the tag "node_app".
+- "docker images" lists all the Docker images present on the system.
+- "docker run -d --name node_app_1 -p 3000:3000 node_app" runs a Docker container in the background with the name "node_app_1", maps host port 3000 to container port 3000 and uses the image "node_app".
+- "docker container ls" lists all running containers.
+- "curl http://localhost:3000" sends a HTTP request to the URL "http://localhost:3000" and returns the response. This can be used to test if the Node.js application is running correctly inside the container.
 
 
 ```
