@@ -121,8 +121,7 @@ curl http://localhost:3000
 <br><br>
 
 Adjust the security group of the AWS EC2 instance (which hosts both Cloud9 and containers) to allow network traffic on port 3000 from your computer:
-
-<br><br>
+<br>
 <p align="center" >
   <img width="657" alt="Screenshot 2023-02-02 at 21 52 29" src="https://user-images.githubusercontent.com/104728608/216458138-8c5325cf-87a9-4625-ab49-f5c4dc324daa.png">
 </p>
