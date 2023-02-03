@@ -6,7 +6,7 @@ For this project, we'll be deploying a web app from another project (built using
 
 This time, we're taking a different approach by using containerization and deploying the app with Docker.<br> 
 We'll launch two containers on an EC2 instance running AWS Cloud9 IDE. One container will host the app, and the other will host the MySQL database. After deployment, we'll store the Docker images permanently in the AWS Elastic Container Registry (ECR).
-<br><br><br><br>
+<br><br><br>
 This simple web application utilizes a web interface to interact with a MySQL database, enabling the performance of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
 <p align="center" >
