@@ -208,8 +208,17 @@ FROM mysql:8.0.23
 COPY ./my_sql.sql /
 EXPOSE 3306
 ```
+<<<<<<<<< saved version
 <br><br>
+=========
+<br><br>
+```
+docker rmi -f $(docker image ls -a -q)
+sudo docker image prune -f && sudo docker container prune -f
+```
+>>>>>>>>> local version
 
+<<<<<<<<< saved version
 Execute these Docker commands to perform the following actions:
 - Build a Docker image named "mysql_server" from the current directory using the "docker build" command.
 - List all Docker images on the system using the "docker images" command.
@@ -217,6 +226,9 @@ Execute these Docker commands to perform the following actions:
 - List all running Docker containers using the "docker container ls" command.
 - Execute a SQL script named "my_sql.sql" into the running "mysql_1" container as the MySQL root user with the password 12345678 using the "docker exec" command.
 - Execute an SQL command to create a new MySQL user named "nodeapp" with password 12345678 and grant all privileges to the user on all databases using the "docker exec" command.
+=========
+<br><br>
+>>>>>>>>> local version
 ```
 docker build --tag mysql_server .
 docker images
