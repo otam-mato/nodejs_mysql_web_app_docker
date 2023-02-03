@@ -151,7 +151,7 @@ That is what we have done so far:
 <br><br>
 
 
-These commands allow you to access the inside of container's shell and view the current environment variables. You can either set the variables within the container or pass them through CLI commands later. These variables are required for the JavaScript script to connect to the database. The script will utilize these variables when establishing a connection to the MySQL database.
+These commands allow you to access the inside of the container's shell and view the current environment variables. You can either set the variables within the container or pass them through CLI commands later. These variables are required for the JavaScript script to connect to the database. The script will utilize these variables when establishing a connection to the MySQL database.
 ```
 docker ps
 docker exec -ti 4e446ba88388  sh
