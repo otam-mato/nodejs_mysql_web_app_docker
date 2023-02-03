@@ -184,7 +184,7 @@ mysqldump -P 3306 -h  <mysql-host-ip-address> -u nodeapp -p --databases COFFEE >
 ```
 
 <br><br>
-Navigate to "containers" and create a mysql folder
+Navigate to the directory "containers" and create a mysql folder
 ```
 cd /home/ec2-user/environment/containers
 mkdir mysql
