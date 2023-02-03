@@ -49,7 +49,7 @@ touch Dockerfile
 ```
 <br><br>
 
-Next, write a Dockerfile for a Node.js application based on the Alpine Linux image version 11. The Dockerfile performs the following steps:
+Next, write the Dockerfile for a Node.js application based on the Alpine Linux image version 11. The Dockerfile performs the following steps:
 
 - It specifies the base image as node:11-alpine.
 - It creates a directory "/usr/src/app" in the image.
