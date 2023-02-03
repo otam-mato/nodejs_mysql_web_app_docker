@@ -17,8 +17,10 @@ wget https://github.com/otammato/Docker_WebApp_NodeJS_AWS_RDS_MySql/blob/main/Do
 
 tar -xzvf Docker_WebApp_NodeJS_AWS_RDS_MySql.tar.gz
 ```
+<br><br>
 
- initiate git locally, make the first push to GitHub
+
+Initiate git locally, make the first push to GitHub
 ```
 git -v
 git init
