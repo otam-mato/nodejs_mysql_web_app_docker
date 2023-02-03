@@ -93,7 +93,7 @@ This is a directory tree in my Cloud9 after all the above id done:
 <br><br>
 <br><br>
 
-These commands are used to create and run a Docker container for a Node.js application:
+Navigate to /containers/node_app and run these commands to create and run a Docker container for the Node.js application:
 
 - docker build --tag node_app . builds a Docker image using the Dockerfile in the current directory with the tag "node_app".
 - docker images lists all the Docker images present on the system.
