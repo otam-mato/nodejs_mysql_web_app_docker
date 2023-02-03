@@ -126,6 +126,8 @@ Adjust the security group of the AWS EC2 instance (which hosts both Cloud9 and c
   <img width="657" alt="Screenshot 2023-02-02 at 21 52 29" src="https://user-images.githubusercontent.com/104728608/216458138-8c5325cf-87a9-4625-ab49-f5c4dc324daa.png">
 </p>
 <br><br>
+<br><br>
+<br><br>
 
 Paste the <puplic_ip>:3000 in your browser (access the web interface of the application, which is now running in a container)
 <br><br>
