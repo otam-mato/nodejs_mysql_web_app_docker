@@ -142,10 +142,10 @@ That is what we have done so far:
 </p>
 <br><br>
 
-- You copied the code base into a directory, which acted as your build area [a]. You also created a Dockerfile that provided instructions for how to create a Docker image. That Dockerfile specified a FROM instruction that identified a starter image to use.
-- You then ran the docker build command [b]. Docker read the Dockerfile and requested the starter image from an image repository [c]. The image repository returned the starter image file [d].
+- We copied the code base into a directory, which acted as our build area [a]. We also created a Dockerfile that provided instructions for how to create a Docker image. That Dockerfile specified a FROM instruction that identified a starter image to use.
+- We then ran the docker build command [b]. Docker read the Dockerfile and requested the starter image from an image repository [c]. The image repository returned the starter image file [d].
 - The docker build command then finished building the image according to the instructions in the Dockerfile, which resulted in the Docker image [e].
-- Finally, you ran the docker run command [f] to run a Docker container [g].
+- Finally, we ran the docker run command [f] to run a Docker container [g].
 <p align="center" >  
   <img width="700" alt="Screenshot 2023-02-02 at 11 07 58" src="https://user-images.githubusercontent.com/104728608/216308903-d17880bb-4714-47d9-9070-267a6f02b6b8.png">
 </p>
