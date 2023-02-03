@@ -1,7 +1,7 @@
   
 # Docker web app (NodeJS/Express) communicating with MySql server
 
-=
+------
 
 <br><br>
 
