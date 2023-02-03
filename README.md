@@ -135,9 +135,10 @@ Paste the <puplic_ip>:3000 in your browser (access the web interface of the appl
 </p>
 <br><br>
 <br><br>
+<br><br>
 
 That is what we have done so far:
-<br><br>
+<br>
 <p align="center" >
   <img width="700" alt="Screenshot 2023-02-02 at 10 46 14" src="https://user-images.githubusercontent.com/104728608/216304326-f0d44a4b-37b2-4056-b22b-e2f01d749260.png">
 </p>
@@ -172,7 +173,7 @@ APP_DB_NAME=COFFEE
 
 <br><br>
 
-Alternatively, passing the env variable via CLI with a docker command:
+An alternative approach to setting environment variables is to pass them through the command-line interface (CLI) using a Docker command. This can be done by using the "-e" option in the Docker run command, followed by the environment variable and its value, like this:
 ```
 docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST="<ip-address>" node_ap
 ```
