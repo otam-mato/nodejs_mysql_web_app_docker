@@ -70,7 +70,7 @@ CMD ["npm", "run", "start"]
 <br><br>
 
 
-Push to GitHub
+Push your project to GitHub
 ```
 git add .
 git commit -m "Docker file created"
@@ -79,7 +79,7 @@ git push -u origin
 # to unstage the changes
 # git reset
 
-# to unstage partially
+# to unstage partially and add them to .gitignore later
 # git restore --staged ../../../Terraform_template/terraform.tfstate
 # git restore --staged ../../../Terraform_template/terraform.tfstate.1675123997.backup
 # git restore --staged ../../../Terraform_template/terraform.tfstate.backup
