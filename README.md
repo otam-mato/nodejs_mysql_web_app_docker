@@ -252,8 +252,11 @@ Check the functionality of the app:
 - load the ip address in your web browser
 - click at "suppliers link" to test the interaction with MySQL Database
 
-
-
+<br><br>
+<p align="center" >
+  <img width="1261" alt="Screenshot 2023-01-31 at 19 23 50" src="https://user-images.githubusercontent.com/104728608/216671663-056aa8d3-ad4e-4e86-bf6e-d84ad7cfff6c.png">
+</p>
+<br><br>
 
 Finally, we 
 This is AWS CLI command connects you to ECR registry. After completed you got a message of the result of login
@@ -262,6 +265,7 @@ aws ecr get-login-password \
 --region us-east-1 | docker login --username AWS \
 --password-stdin <account-id>.dkr.ecr.us-east-1.amazonaws.com
 ```
+
 
 ```
 aws ecr create-repository --repository-name node-app
