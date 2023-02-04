@@ -6,7 +6,7 @@ For this project, we'll be deploying a web app from another project (built using
 <br><br>
 This time, we will initiate the launch of two containers on an EC2 instance that operates AWS Cloud9 IDE. One container will host the application, while the other will host the MySQL database. After successful deployment, the Docker images will be pushed and stored permanently within the AWS Elastic Container Registry (ECR) for centralized management and preservation.
 <br><br><br>
-This simple web application utilizes a web interface to interact with a MySQL database, enabling the performance of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
+This simple web application interacts with a MySQL database, enabling the performance of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
 <p align="center" >
   <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png">
