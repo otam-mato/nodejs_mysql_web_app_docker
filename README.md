@@ -55,3 +55,9 @@ Pre-requisites:
 2. Open the port to access the app. I am using 3000.
 3. Install Docker on the machine: ```sudo apt-get install docker.io```
 4. Install MySQL or MariaDB on the machine: ```sudo apt-get install mariadb-client-core-10.6```
+
+<br>
+<br>
+
+
+## 1. Create Docker files
