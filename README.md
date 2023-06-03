@@ -1,5 +1,5 @@
   
-# A Full Stack web app. Dockerized. (NodeJS/Express MySql)
+# A full stack web app. Dockerized. (NodeJS/Express MySql)
 
 <br>
 For this project, we'll be deploying a web app from another project (built using Node.JS and Express) located at https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. The previous deployment was done on EC2 and RDS instances.
