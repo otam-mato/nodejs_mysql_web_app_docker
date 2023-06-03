@@ -48,3 +48,8 @@ To download all of them clone the current repository: ```git clone https://githu
 
 <br>
 <br>
+
+
+Pre-requisites:
+1. Launch an instance. I am using Ubuntu 22.04 Amazon EC2 instance.
+2. Open the port to access the app. I am using 3000.
