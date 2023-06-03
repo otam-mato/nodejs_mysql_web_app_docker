@@ -60,4 +60,7 @@ Pre-requisites:
 <br>
 
 
-## 1. Create Docker files
+## 1. MySQL containerized server
+
+1.1.
+1.2. Create or download a Docker file:
