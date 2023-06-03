@@ -5,7 +5,7 @@
 For this project, we'll be deploying a web app from another project (built using Node.JS and Express) located at https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. The previous deployment was done on EC2 and RDS instances.
 <br><br>
 
-This time, we will launch two Docker containers on an EC2 instance which operates AWS Cloud9 IDE. One container will host the application, while the other will host the MySQL database. 
+This time, we will launch two Docker containers on an EC2 instance. One container will host the application, while the other will host the MySQL database. 
 
 After successful deployment, the Docker images will be pushed and stored permanently within the AWS Elastic Container Registry (ECR) for centralized management and preservation.
 <br><br><br>
