@@ -1,10 +1,13 @@
   
-# Docker web app (NodeJS/Express) + Docker MySql server
+# A Full Stack web app. Dockerized. (NodeJS/Express MySql)
 
 <br>
 For this project, we'll be deploying a web app from another project (built using Node.JS and Express) located at https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. The previous deployment was done on EC2 and RDS instances.
 <br><br>
-This time, we will launch two containers on the same EC2 instance which operates AWS Cloud9 IDE. One container will host the application, while the other will host the MySQL database. After successful deployment, the Docker images will be pushed and stored permanently within the AWS Elastic Container Registry (ECR) for centralized management and preservation.
+
+This time, we will launch two Docker containers on an EC2 instance which operates AWS Cloud9 IDE. One container will host the application, while the other will host the MySQL database. 
+
+After successful deployment, the Docker images will be pushed and stored permanently within the AWS Elastic Container Registry (ECR) for centralized management and preservation.
 <br><br><br>
 This simple web application interacts with a MySQL database, enabling the performance of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
