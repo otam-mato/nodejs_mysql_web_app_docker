@@ -65,3 +65,9 @@ Pre-requisites:
 1.1. Navigate to the ```web_app_files/containers/mysql/```
 
 1.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/3c13fb0ed84e4a9ac806bb6261581da2b1e9ce19/web_app_files/containers/mysql/Dockerfile):
+
+```
+FROM mysql:8.0.23
+COPY my_sql.sql /docker-entrypoint-initdb.d/
+EXPOSE 3306
+```
