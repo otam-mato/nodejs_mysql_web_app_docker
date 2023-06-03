@@ -25,7 +25,7 @@ This simple web application interacts with a MySQL database, enabling the perfor
 
 
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-01-31 at 19 23 50" src="https://user-images.githubusercontent.com/104728608/216672050-8dea2615-03aa-426b-b3c5-75fd1460a958.png">
+  <img width="700" alt="Screenshot 2023-01-31 at 19 23 50" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/cf51b385-90d9-4a47-be53-0ca66e1b797d">
 </p>
 
 <br><br>
