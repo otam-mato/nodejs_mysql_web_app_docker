@@ -85,3 +85,9 @@ Make sure that the ```my_sql.sql``` file is located in the same directory as the
 1.5. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>```
 
 1.6. ```mysql -h 172.17.0.2 -P 3306 -u root -p```
+
+1.7. ```sql
+CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
+FLUSH PRIVILEGES;
+```
