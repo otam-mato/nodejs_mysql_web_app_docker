@@ -40,7 +40,7 @@ The app's architecture diagram:
 
 Download the app's files:
 
-> 1. [fff](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/tree/57e06b38dcba8179fc8b0ee8757b5d94c5a3a0de/web_app_files/containers/mysql)
+> 1. [For the MySQL container](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/tree/57e06b38dcba8179fc8b0ee8757b5d94c5a3a0de/web_app_files/containers/mysql)
 > 2. rrr
 > 3. ...
 
