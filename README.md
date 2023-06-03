@@ -62,6 +62,6 @@ Pre-requisites:
 
 ## 1. MySQL containerized server
 
-1.1. Navigate to the 
+1.1. Navigate to the ```web_app_files/containers/mysql/```
 
-1.2. Create or download a Docker file:
+1.2. Create or download the Docker file:
