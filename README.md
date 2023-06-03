@@ -82,4 +82,5 @@ Make sure that the ```my_sql.sql``` file is located in the same directory as the
 
 1.4. ```sudo docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=12345678 -d my-sql-test```
 
-1.5. ```sudo docker inspect network bridge```
+1.5. ```sudo docker inspect network bridge``` or ```docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
+```
