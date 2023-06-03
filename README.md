@@ -45,3 +45,6 @@ The app's files:
 > 3. [A database backup](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/ac9468edb44f095392065d7f610fb62e73c78ea0/web_app_files/resources/my_sql.sql)
 
 To download all of them clone the current repository: ```git clone https://github.com/otammato/FullStack_NodeJS_MySql_Docker.git```
+
+<br>
+<br>
