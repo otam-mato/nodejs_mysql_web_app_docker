@@ -86,7 +86,7 @@ Make sure that the ```my_sql.sql``` file is located in the same directory as the
 
 1.6. ```mysql -h 172.17.0.2 -P 3306 -u root -p```
 
-1.7. These commands will create a user named admin with the password 12345678, grant all privileges to that user on all databases and tables, and flush the privileges to ensure the changes take effect.
+1.7. The below commands will create a user named admin with the password 12345678, grant all privileges to that user on all databases and tables, and flush the privileges to ensure the changes take effect.
 ```sql
 CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
