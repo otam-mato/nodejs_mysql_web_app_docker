@@ -12,8 +12,14 @@ After successful deployment, the Docker images will be pushed and stored permane
 This simple web application interacts with a MySQL database, enabling the performing of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
 <p align="center" >
-  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png">
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/3a4f7ce7-777e-4387-afcf-6146cb92f7f8">
 </p>
+<br><br>
+
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-01-31 at 19 23 50" src="https://user-images.githubusercontent.com/104728608/216672050-8dea2615-03aa-426b-b3c5-75fd1460a958.png">
+</p>
+
 <br><br>
 
 <p align="center" >
@@ -27,4 +33,6 @@ The app's architecture diagram:
 <p align="center" >
   <img width="700" alt="Screenshot 2023-01-31 at 19 23 50" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/1c930171-c2a2-4931-b2d0-ea3b0df018c2">
 </p>
+
+
 
