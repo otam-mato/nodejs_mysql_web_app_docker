@@ -77,3 +77,9 @@ In this modified Dockerfile:
 
 The COPY command copies the "my_sql.sql" file from the build context (the same directory as the Dockerfile) to the ```/docker-entrypoint-initdb.d/ ``` directory inside the container. The ```/docker-entrypoint-initdb.d/``` directory is a special directory in the MySQL Docker image, and any SQL scripts placed in this directory will be automatically executed when the container starts.
 Make sure that the ```my_sql.sql``` file is located in the same directory as the Dockerfile. The SQL statements from the ```my_sql.sql``` file will be executed during the container initialization.
+
+1.3. ```sudo docker build --tag my-sql-test . ```
+
+1.4. ```sudo docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=12345678 -d my-sql-test```
+
+1.5. ```sudo docker inspect network bridge```
