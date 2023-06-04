@@ -92,3 +92,9 @@ CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
 FLUSH PRIVILEGES;
 ```
+
+<br>
+<br>
+
+
+## 1. NodeJS app containerized server
