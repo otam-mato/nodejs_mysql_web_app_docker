@@ -1,8 +1,8 @@
   
-# A full stack demo web app. Dockerized. NodeJS/Express - frontend, MySql - backend.
+# A full stack demo web app. Dockerized. Node.js/Express - frontend, MySql - backend.
 
 <br>
-For this demo, I'll be deploying a web app from another project (built using Node.JS and Express) located at https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. The previous deployment was done on EC2 and RDS instances.
+For this demo, I'll be deploying a web app from another project (built using Node.js and Express) located at https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git. The previous deployment was done on EC2 and RDS instances.
 <br><br>
 
 This time, we will launch two Docker containers on an EC2 instance. One container will host the application, while the other will host the MySQL database. 
@@ -97,7 +97,7 @@ FLUSH PRIVILEGES;
 <br>
 
 
-## 2. NodeJS app containerized server
+## 2. Node.js app containerized server
 
 2.1. Navigate to the ```web_app_files/containers/node_app/codebase_partner```
 
