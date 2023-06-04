@@ -71,11 +71,11 @@ FROM mysql:8.0.23
 COPY my_sql.sql /docker-entrypoint-initdb.d/
 EXPOSE 3306
 ```
-In this Dockerfile:
-
-```my_sql.sql``` is a database backup copy which I created by ```mysqldump``` command. It contains ```COFFEE``` database.
-
-The COPY command copies the "my_sql.sql" file from the build context (the same directory as the Dockerfile) to the ```/docker-entrypoint-initdb.d/ ``` directory inside the container. The ```/docker-entrypoint-initdb.d/``` directory is a special directory in the MySQL Docker image, and any SQL scripts placed in this directory will be automatically executed when the container starts.
+> In this Dockerfile:
+> 
+> ```my_sql.sql``` is a database backup copy which I created by ```mysqldump``` command. It contains ```COFFEE``` database.
+> 
+> The COPY command copies the "my_sql.sql" file from the build context (the same directory as the Dockerfile) to the ```/docker-entrypoint-initdb.d/ ``` directory inside the container. The ```/docker-entrypoint-initdb.d/``` directory is a special directory in the MySQL Docker image, and any SQL scripts placed in this directory will be automatically executed when the container starts.
 Make sure that the ```my_sql.sql``` file is located in the same directory as the Dockerfile. The SQL statements from the ```my_sql.sql``` file will be executed during the container initialization and creates a database named ```COFFEE```.
 
 1.3. ```sudo docker build --tag my-sql-test . ``` Build a Docker image with the tag "my-sql-test". The period at the end of the command represents the build context, which is the current directory. This means that the Dockerfile for building the image should be present in the current directory.
