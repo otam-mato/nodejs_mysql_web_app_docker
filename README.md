@@ -38,7 +38,7 @@ This simple web application interacts with a MySQL database, enabling the perfor
 
 <br><br>
 
-The app's files:
+## The app's files:
 
 > 1. [For creating the database (MySQL) container](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/tree/57e06b38dcba8179fc8b0ee8757b5d94c5a3a0de/web_app_files/containers/mysql)
 > 2. [For creating the app (Node.JS) container](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/tree/04dd0fa47f8d01361dc133664129347503f2d292/web_app_files/containers/node_app/codebase_partner)
