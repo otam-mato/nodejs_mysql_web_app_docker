@@ -53,8 +53,8 @@ To download all of them clone the current repository: ```git clone https://githu
 ## Pre-requisites:
 1. Launch an instance. I am using Ubuntu 22.04 AWS EC2 instance.
 2. Open the port to access the app. I am using 3000.
-3. Install Docker on the machine: ```sudo apt-get install docker.io```
-4. Install MySQL or MariaDB on the machine: ```sudo apt-get install mariadb-client-core-10.6```
+3. Install Docker on the machine: ```sudo apt-get install docker.io``` for Ubuntu.
+4. Install MySQL or MariaDB on the machine: ```sudo apt-get install mariadb-client-core-10.6``` for Ubuntu.
 
 <br>
 <br>
