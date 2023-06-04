@@ -116,6 +116,6 @@ EXPOSE 3000
 CMD ["npm", "run", "start"]
 ```
 
-This Dockerfile:
-
-Sets up a Node.js environment based on ```node:11-alpine``` image, creates a directory ```/usr/src/app``` inside the container. The ```-p``` flag ensures that if the parent directories don't exist, they will be created. Then sets the working directory within the container to ```/usr/src/app```, copies the application code into the container, installs dependencies using npm, exposes port 3000 for inbound connections, and specifies the command to start the Node.js application. 
+> This Dockerfile:
+> 
+> Sets up a Node.js environment based on ```node:11-alpine``` image, creates a directory ```/usr/src/app``` inside the container. The ```-p``` flag ensures that if the parent directories don't exist, they will be created. Then sets the working directory within the container to ```/usr/src/app```, copies the application code into the container, installs dependencies using npm, exposes port 3000 for inbound connections, and specifies the command to start the Node.js application. 
