@@ -120,11 +120,11 @@ CMD ["npm", "run", "start"]
 > 
 > Sets up a Node.js environment based on ```node:11-alpine``` image, creates a directory ```/usr/src/app``` inside the container. The ```-p``` flag ensures that if the parent directories don't exist, they will be created. Then sets the working directory within the container to ```/usr/src/app```, copies the application code into the container, installs dependencies using npm, exposes port 3000 for inbound connections, and specifies the command to start the Node.js application. 
 
-2.3. ```docker build --tag node_app .```
+2.3. ```docker build --tag node_app .``` Build the docker image from the context in current directory. Dockerfile must be here.
 
 2.4. ```docker ps``` To discover the MySQL's <container_id>
 
-2.4. ``````sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running MySQL conainer's IP.
+2.5. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running MySQL conainer's IP.
 
 2.4. ```docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST=172.17.0.2 node_app``` Run a Docker container for a Node.js application.
 ```-e APP_DB_HOST=172.17.0.2``` This flag sets the environment variable APP_DB_HOST to "172.17.0.2" (discovered in the previous step). It specifies the host or IP address of the database server that the Node.js application should connect to. 
