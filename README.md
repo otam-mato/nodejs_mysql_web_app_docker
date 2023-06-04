@@ -170,3 +170,5 @@ CMD ["npm", "run", "start"]
 4.5. ```docker push montcarotte/fullstack_nodejs_mysql_demo:mysql_server```
 
 4.6. ```docker push montcarotte/fullstack_nodejs_mysql_demo:node_app```
+
+<img width="1000" alt="Screenshot 2023-06-04 at 14 25 05" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/af0d01d7-7cf7-4ece-a54d-1e7451520de4">
