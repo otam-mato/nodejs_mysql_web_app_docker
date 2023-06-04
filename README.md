@@ -11,7 +11,13 @@ After successful deployment, the Docker images will be pushed and stored permane
 <br><br>
 This simple web application interacts with a MySQL database, enabling the performing of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
+steps:
+- MySQL containerized server
+- Node.js app containerized server
+- Test the app
+- Push the images to Docker hub
 
+<br><br>
 <p align="center" >
   <img width="700" alt="Screenshot 2023-01-31 at 19 23 50" src="https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png">
 </p>
@@ -153,7 +159,7 @@ CMD ["npm", "run", "start"]
 <br>
 <br>
 
-## 4. Push the images to Docker hub
+## 4. Push the images to Docker Hub
 
 4.1. ```docker login``` Please use your DockerHub login and password.
 
