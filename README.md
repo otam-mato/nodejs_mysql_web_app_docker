@@ -84,7 +84,7 @@ Make sure that the ```my_sql.sql``` file is located in the same directory as the
 
 1.5. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running conainer's IP.
 
-1.6. ```mysql -h 172.17.0.2 -P 3306 -u root -p```
+1.6. ```mysql -h 172.17.0.2 -P 3306 -u root -p``` connect to a MySQL database server using the MySQL command-line client.
 
 1.7. When testing connection to the database use the below commands to create a user named ```admin``` with the password ```12345678```, grant all privileges to that user on all databases and tables, and flush the privileges to ensure the changes take effect.
 ```sql
