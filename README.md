@@ -129,3 +129,7 @@ CMD ["npm", "run", "start"]
 2.4. ```docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST=172.17.0.2 node_app``` Run a Docker container for a Node.js application.
 ```-e APP_DB_HOST=172.17.0.2``` This flag sets the environment variable APP_DB_HOST to "172.17.0.2" (discovered in the previous step). It specifies the host or IP address of the database server that the Node.js application should connect to. 
 
+<br>
+<br>
+
+## 3. Test the app
