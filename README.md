@@ -134,4 +134,8 @@ CMD ["npm", "run", "start"]
 
 ## 3. Test the app
 
+3.1. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running MySQL conainer's IP.
+
+3.2. ```curl 172.17.0.3:3000```
+
 <img width="700" alt="Screenshot 2023-06-04 at 12 54 35" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e">
