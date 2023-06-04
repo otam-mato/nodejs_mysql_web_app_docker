@@ -64,7 +64,7 @@ Pre-requisites:
 
 1.1. Navigate to the ```web_app_files/containers/mysql/```
 
-1.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/3c13fb0ed84e4a9ac806bb6261581da2b1e9ce19/web_app_files/containers/mysql/Dockerfile):
+1.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/3c13fb0ed84e4a9ac806bb6261581da2b1e9ce19/web_app_files/containers/mysql/Dockerfile). Name it just ```Dockefile``` with no extension:
 
 ```yml
 FROM mysql:8.0.23
@@ -104,7 +104,7 @@ You will need this because Node.js configuration suggests "admin" user for conne
 
 2.1. Navigate to the ```web_app_files/containers/node_app/codebase_partner```
 
-2.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/0a752e41bfab83f616d35690a52de4a537821928/web_app_files/containers/node_app/codebase_partner/Dockerfile):
+2.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/0a752e41bfab83f616d35690a52de4a537821928/web_app_files/containers/node_app/codebase_partner/Dockerfile). Name it just ```Dockefile``` with no extension:
 
 ```yaml
 FROM node:11-alpine
