@@ -133,3 +133,5 @@ CMD ["npm", "run", "start"]
 <br>
 
 ## 3. Test the app
+
+<img width="700" alt="Screenshot 2023-06-04 at 12 54 35" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e">
