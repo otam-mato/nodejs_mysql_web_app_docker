@@ -97,4 +97,6 @@ FLUSH PRIVILEGES;
 <br>
 
 
-## 1. NodeJS app containerized server
+## 2. NodeJS app containerized server
+
+2.1. Navigate to the ```web_app_files/containers/node_app/codebase_partner```
