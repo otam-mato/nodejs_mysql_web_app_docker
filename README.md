@@ -138,4 +138,12 @@ CMD ["npm", "run", "start"]
 
 3.2. ```curl 172.17.0.3:3000```
 
-<img width="700" alt="Screenshot 2023-06-04 at 12 54 35" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e">
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e">
+</p>
+<br><br>
+
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa">
+</p>
+<br><br>
