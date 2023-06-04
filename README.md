@@ -156,3 +156,13 @@ CMD ["npm", "run", "start"]
 ## 4. Push the images to Docker hub
 
 4.1. ```docker login```
+
+4.2. ```docker images```
+
+4.3. ```docker tag 15be6b7d99c6 montcarotte/fullstack_nodejs_mysql_demo:node_app```
+
+4.4. ```docker tag 8bc7fabed8a9 montcarotte/fullstack_nodejs_mysql_demo:mysql_server```
+
+4.5. ```docker push montcarotte/fullstack_nodejs_mysql_demo:mysql_server```
+
+4.6. ```docker push montcarotte/fullstack_nodejs_mysql_demo:node_app```
