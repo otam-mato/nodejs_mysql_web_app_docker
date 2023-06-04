@@ -12,8 +12,8 @@ After successful deployment, the Docker images will be pushed and stored permane
 This simple web application interacts with a MySQL database, enabling the performing of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
 Steps:
-- MySQL containerized server
-- Node.js app containerized server
+- Launch MySQL containerized server
+- Launch Node.js app containerized server
 - Test the app
 - Push the images to Docker hub
 
