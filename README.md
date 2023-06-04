@@ -155,7 +155,7 @@ CMD ["npm", "run", "start"]
 
 ## 4. Push the images to Docker hub
 
-4.1. ```docker login```
+4.1. ```docker login``` Please use your DockerHub login and password.
 
 <p align="center" >
   <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0">
