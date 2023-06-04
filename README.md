@@ -154,3 +154,5 @@ CMD ["npm", "run", "start"]
 <br>
 
 ## 4. Push the images to Docker hub
+
+4.1. ```docker login```
