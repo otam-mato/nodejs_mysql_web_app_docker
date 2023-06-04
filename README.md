@@ -100,3 +100,5 @@ FLUSH PRIVILEGES;
 ## 2. NodeJS app containerized server
 
 2.1. Navigate to the ```web_app_files/containers/node_app/codebase_partner```
+
+2.2. Create or download the Docker file
