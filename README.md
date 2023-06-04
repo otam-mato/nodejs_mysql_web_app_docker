@@ -157,11 +157,18 @@ CMD ["npm", "run", "start"]
 
 4.1. ```docker login```
 
-<img width="700" alt="Screenshot 2023-06-04 at 14 21 01" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0">
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0">
+</p>
+<br><br>
+
 
 4.2. ```docker images```
 
-<img width="700" alt="Screenshot 2023-06-04 at 14 22 47" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/6d9f5992-c639-4173-b94c-cfed2e287782">
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/6d9f5992-c639-4173-b94c-cfed2e287782">
+</p>
+<br><br>
 
 4.3. ```docker tag 15be6b7d99c6 montcarotte/fullstack_nodejs_mysql_demo:node_app```
 
@@ -171,4 +178,8 @@ CMD ["npm", "run", "start"]
 
 4.6. ```docker push montcarotte/fullstack_nodejs_mysql_demo:node_app```
 
-<img width="1000" alt="Screenshot 2023-06-04 at 14 25 05" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/af0d01d7-7cf7-4ece-a54d-1e7451520de4">
+<p align="center" >
+  <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/af0d01d7-7cf7-4ece-a54d-1e7451520de4">
+</p>
+<br><br>
+
