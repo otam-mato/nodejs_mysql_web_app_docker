@@ -134,7 +134,7 @@ CMD ["npm", "run", "start"]
 
 ## 3. Test the app
 
-3.1. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running MySQL conainer's IP.
+3.1. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running conainers IP.
 
 3.2. ```curl 172.17.0.3:3000```
 
