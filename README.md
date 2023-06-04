@@ -71,7 +71,7 @@ FROM mysql:8.0.23
 COPY my_sql.sql /docker-entrypoint-initdb.d/
 EXPOSE 3306
 ```
-In this modified Dockerfile:
+In this Dockerfile:
 
 ```my_sql.sql``` is a database backup copy which I created by ```mysqldump``` command. It contains ```COFFEE``` database.
 
