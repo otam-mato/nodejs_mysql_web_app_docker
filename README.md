@@ -92,6 +92,8 @@ CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
 GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
 FLUSH PRIVILEGES;
 ```
+You will need this as Node.js configuration suggests "admin" user for connecting to the database.
+<img width="300" alt="Screenshot 2023-06-04 at 12 18 34" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/0b209554-b4a3-4061-b17a-1cbf8d071296">
 
 <br>
 <br>
