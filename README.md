@@ -156,9 +156,11 @@ CMD ["npm", "run", "start"]
 ## 4. Push the images to Docker hub
 
 4.1. ```docker login```
+
 <img width="700" alt="Screenshot 2023-06-04 at 14 21 01" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0">
 
 4.2. ```docker images```
+
 <img width="700" alt="Screenshot 2023-06-04 at 14 22 47" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/6d9f5992-c639-4173-b94c-cfed2e287782">
 
 4.3. ```docker tag 15be6b7d99c6 montcarotte/fullstack_nodejs_mysql_demo:node_app```
