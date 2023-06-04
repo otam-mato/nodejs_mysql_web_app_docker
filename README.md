@@ -66,7 +66,7 @@ Pre-requisites:
 
 1.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/3c13fb0ed84e4a9ac806bb6261581da2b1e9ce19/web_app_files/containers/mysql/Dockerfile):
 
-```
+```yml
 FROM mysql:8.0.23
 COPY my_sql.sql /docker-entrypoint-initdb.d/
 EXPOSE 3306
@@ -103,7 +103,7 @@ FLUSH PRIVILEGES;
 
 2.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/0a752e41bfab83f616d35690a52de4a537821928/web_app_files/containers/node_app/codebase_partner/Dockerfile):
 
-```tf
+```yaml
 FROM node:11-alpine
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
