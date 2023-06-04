@@ -149,3 +149,8 @@ CMD ["npm", "run", "start"]
   <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa">
 </p>
 <br><br>
+
+<br>
+<br>
+
+## 4. Push the images to Docker hub
