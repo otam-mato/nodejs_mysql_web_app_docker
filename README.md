@@ -8,7 +8,7 @@ For this demo, I'll be deploying a web app from another project (built using Nod
 This time, we will launch two Docker containers on an EC2 instance. One container will host the application, while the other will host the MySQL database. 
 
 After successful deployment, the Docker images will be pushed and stored permanently within the AWS Elastic Container Registry (ECR) for centralized management and preservation.
-<br><br><br>
+<br><br>
 This simple web application interacts with a MySQL database, enabling the performing of CRUD (Create, Read, Update, Delete) operations on the data stored within the database.
 <br><br>
 
