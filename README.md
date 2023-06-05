@@ -142,7 +142,7 @@ CMD ["npm", "run", "start"]
 
 3.1. ```sudo docker inspect network bridge``` or ``` docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>``` Discover the running conainers' IP.
 
-3.2. ```curl 172.17.0.3:3000```
+3.2. ```curl 172.17.0.3:3000``` Use "curl" command to request the discovered in the previous step IP and the application port
 
 <p align="center" >
   <img width="700" alt="Screenshot 2023-02-01 at 20 11 38" src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e">
