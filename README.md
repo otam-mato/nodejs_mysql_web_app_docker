@@ -105,6 +105,7 @@ You will need this because Node.js configuration suggests "admin" user for conne
 <br>
 <br>
 
+> The standard security prctice - to store the sensitive data, like passwords, in environment variables or a secrets management tool. 
 
 ## 2. Node.js app containerized server
 
