@@ -16,6 +16,7 @@ In this demo, we will deploy two Docker containers on an EC2 instance:
 2. The other will host the MySQL database.
 
 Following a successful deployment, Docker images will be permanently stored in DockerHub for centralized management and preservation.
+
 <br>
 
 ## Technologies used
@@ -26,7 +27,7 @@ Following a successful deployment, Docker images will be permanently stored in D
 - JavaScript
 - MySQL
 - Docker
-
+<br>
 
 ## Application Functionality
 
