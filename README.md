@@ -75,7 +75,6 @@ The Main Solution:
 
 </details>
 
-<br>
 
 ## Implementation Steps
 
