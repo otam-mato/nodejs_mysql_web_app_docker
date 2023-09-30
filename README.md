@@ -26,7 +26,6 @@ Following a successful deployment, Docker images will be permanently stored in D
 - JavaScript
 - MySQL
 - Docker
-
 <br>
 
 ## Application Functionality
