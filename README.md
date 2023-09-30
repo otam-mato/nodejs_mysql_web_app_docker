@@ -1,8 +1,8 @@
 [the page is under revision]
 
-# Docker: Full Stack Demo for Containerized Web App with Node.js/Express and MySQL Backend
+# Node.JS + MySQL Web App. Dockerized.
 
-This project involves deploying a web app, originally built using Node.js and Express, hosted at [GitHub Repository](https://github.com/otammato/WebApp_NodeJS_AWS_RDS_MySql.git). The previous deployment was on EC2 and RDS instances.
+This project involves deploying a web app, originally built using Node.js and Express, hosted at [GitHub Repository](https://github.com/otam-mato/nodejs_mysql_web_app_terraform.git). The previous deployment was on EC2 and RDS instances.
 
 ## Deployment Strategy
 
