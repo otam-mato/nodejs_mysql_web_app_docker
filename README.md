@@ -298,3 +298,5 @@ Before starting, ensure the following prerequisites are met:
    ```bash
    docker push montcarotte/fullstack_nodejs_mysql_demo:node_app
    ```
+
+![image](https://github.com/otam-mato/nodejs_mysql_web_app_docker/assets/113034133/d5e41afd-9032-43b5-9828-c05db0635384)
