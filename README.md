@@ -4,7 +4,7 @@
 
 <br>
 
-> **Note:** This is part of a series of demo projects in which I am experimenting a Node.js application.<br>
+> **Note:** This is part of a series of demo projects in which I am experimenting with a Node.js application.<br>
 >
 > The current installment involves deploying of a 'dockerized' web app, originally built using Node.js and Express, presented at this [GitHub Repository](https://github.com/otam-mato/nodejs_mysql_web_app_terraform.git). The previous deployment was on EC2 and RDS instances.
 <br>
