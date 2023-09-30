@@ -89,11 +89,19 @@ Follow these steps for successful implementation:
 
 ## Screenshots
 
-![Screenshot 1](https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/104728608/216415601-4f8b42e4-d7f6-4e0a-9274-16a062b7591d.png" width="700px"/>
+</p>
 
-![Screenshot 2](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa)
+<p align="center">
+  <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa" width="700px"/>
+</p>
 
-![Screenshot 3](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/cf51b385-90d9-4a47-be53-0ca66e1b797d)
+<p align="center">
+  <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/cf51b385-90d9-4a47-be53-0ca66e1b797d" width="700px"/>
+</p>
+
+<br>
 
 ## Architecture Diagram
 
