@@ -26,7 +26,7 @@ Following a successful deployment, Docker images will be permanently stored in D
 - Express
 - JavaScript
 - MySQL
-- Docker
+- Docker + DockerHub
 <br>
 
 ## Application Functionality
