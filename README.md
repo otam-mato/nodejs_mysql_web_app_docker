@@ -20,6 +20,17 @@ Following a successful deployment, Docker images will be permanently stored in D
 
 <br>
 
+## Technologies used
+- AWS
+- EC2
+- Node.JS
+- Express
+- JavaScript
+- MySQL
+- Docker
+
+<br>
+
 ## Application Functionality
 
 This web application interfaces with a MySQL database, facilitating CRUD (Create, Read, Update, Delete) operations on the database records.
