@@ -18,6 +18,8 @@ In this demo, we will deploy two Docker containers on an EC2 instance:
 
 Following a successful deployment, Docker images will be permanently stored in DockerHub for centralized management and preservation.
 
+<br>
+
 ## Application Functionality
 
 This web application interfaces with a MySQL database, facilitating CRUD (Create, Read, Update, Delete) operations on the database records.
