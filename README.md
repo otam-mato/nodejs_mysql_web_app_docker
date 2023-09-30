@@ -7,7 +7,6 @@
 > **Note:** This is part of a series of demo projects in which I am experimenting a Node.js application.<br>
 >
 > The current installment involves deploying of a 'dockerized' web app, originally built using Node.js and Express, presented at [GitHub Repository](https://github.com/otam-mato/nodejs_mysql_web_app_terraform.git). The previous deployment was on EC2 and RDS instances.
-
 <br>
 
 ## Deployment Strategy
@@ -17,7 +16,6 @@ In this demo, we will deploy two Docker containers on an EC2 instance:
 2. The other will host the MySQL database.
 
 Following a successful deployment, Docker images will be permanently stored in DockerHub for centralized management and preservation.
-
 <br>
 
 ## Technologies used
