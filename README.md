@@ -39,8 +39,6 @@ This web application interfaces with a MySQL database, facilitating CRUD (Create
 
 The app sets up a web server for a supplier management system. It allows viewing, adding, updating, and deleting suppliers. 
 
-The Main Solution:
-
 #### **Dependencies and Modules**:
    - **express**: The framework that allows us to set up and run a web server.
    - **body-parser**: A tool that lets the server read and understand data sent in requests.
