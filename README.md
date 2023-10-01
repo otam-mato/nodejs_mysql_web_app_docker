@@ -168,7 +168,7 @@ Before starting, ensure the following prerequisites are met:
 1.4. Run a Docker container for the MySQL server:
 
    ```bash
-   export MYSQL_ROOT_PASSWORD=mysecretpassword
+   export MYSQL_ROOT_PASSWORD=yoursecretpasswordhere
    ```
 
    ```bash
