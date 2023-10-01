@@ -187,7 +187,7 @@ Before starting, ensure the following prerequisites are met:
    mysql -h <MySQL_Container_IP> -P 3306 -u root -p
    ```
 
-- **Create a user named 'admin' with the password `12345678`, grant all privileges, and flush privileges:**
+- **Create a user named 'admin' with the password which correlates with app's 'config', grant all privileges, and flush privileges:**
 
    ```sql
    CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
