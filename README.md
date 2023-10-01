@@ -114,7 +114,7 @@ Follow these steps for successful implementation:
 For the necessary application files, refer to the following links:
 1. [MySQL Container Configuration](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile)
 2. [Node.js App Container Configuration](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/fbc8938ee485438f3e7454c2742fc4ca15933a72/web_app_files/containers/node_app/codebase_partner/Dockerfile)
-3. [Database Backup](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/ac9468edb44f095392065d7f610fb62e73c78ea0/web_app_files/resources/my_sql.sql)
+3. [Database Backup](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/47e2793ef94b0692793a5a2483fab51892bba144/web_app_files/containers/mysql/my_sql.sql)
 
 To acquire all the app these files, clone the current repository using the command:
 ```bash
@@ -299,4 +299,7 @@ Before starting, ensure the following prerequisites are met:
    docker push montcarotte/fullstack_nodejs_mysql_demo:node_app
    ```
 
-![image](https://github.com/otam-mato/nodejs_mysql_web_app_docker/assets/113034133/d5e41afd-9032-43b5-9828-c05db0635384)
+<p align="center">
+  <img src="https://github.com/otam-mato/nodejs_mysql_web_app_docker/assets/113034133/d5e41afd-9032-43b5-9828-c05db0635384" width="700px"/>
+</p>
+
