@@ -85,7 +85,7 @@ Follow these steps for successful implementation:
 1. [**Launch MySQL Containerized Server**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#1-mysql-containerized-server)
 2. [**Launch Node.js App Containerized Server**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#2-nodejs-app-containerized-server)
 3. [**Test the App**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#3-test-the-app)
-4. [**Push the Images to Docker Hub**]()
+4. [**Push the Images to Docker Hub**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#4-push-the-images-to-docker-hub)
 
 ## Screenshots
 
