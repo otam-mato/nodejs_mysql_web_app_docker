@@ -193,9 +193,9 @@ Before starting, ensure the following prerequisites are met:
    </p>
 
 
-   > **Note:** Best practice to store sensitive data like passwords is in environment variables or a secrets management tool.
+   > **Note:** The standard security practice to handle sensitive data like passwords is in environment variables or a secrets management tool.
    > 
-   > This configuration is used to launch the app for testing. However, you can provide different environment variables along with the command 'npm start'
+   > This configuration is used to launch the app for testing. However, the app's logic suggests you can provide different environment variables along with the command 'npm start' when the app started.
 
 ## 2. Node.js App Containerized Server
 
