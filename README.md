@@ -4,7 +4,7 @@
 
 <br>
 
-> **Note:** This is part of a series of demo projects in which I explore a Node.js application.<br>
+> **Note:** This is part of a series of demo projects in which I manipulate a Node.js application using various technologies.<br>
 >
 > The current installment involves deploying a web app using Docker. The app built using Node.js and Express, originally presented at this [GitHub Repository](https://github.com/otam-mato/nodejs_mysql_web_app_terraform.git). The previous deployment was on EC2 and RDS instances.
 <br>
@@ -250,12 +250,16 @@ Before starting, ensure the following prerequisites are met:
    ```bash
    curl <Node_App_Container_IP>:3000
    ```
+   <p align="center">
+     <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e" width="700px"/>
+   </p>
 
-   ![Curl Test Screenshot](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/35abd2e4-0dbf-438c-bf16-67defb0f489e)
 
 3.3. Access the app from the internet using your server's public DNS or IP.
 
-   ![App Access Screenshot](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa)
+   <p align="center">
+     <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa" width="700px"/>
+   </p>
 
 ## 4. Push the Images to Docker Hub
 
@@ -264,8 +268,9 @@ Before starting, ensure the following prerequisites are met:
    ```bash
    docker login
    ```
-
-   ![Docker Hub Login Screenshot](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0)
+   <p align="center">
+     <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0" width="700px"/>
+   </p>
 
 4.2. View Docker images:
 
@@ -273,7 +278,10 @@ Before starting, ensure the following prerequisites are met:
    docker images
    ```
 
-   ![Docker Images Screenshot](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/6d9f5992-c639-4173-b94c-cfed2e287782)
+   <p align="center">
+     <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/6d9f5992-c639-4173-b94c-cfed2e287782" width="700px"/>
+   </p>
+
 
 4.3. Tag the MySQL container image:
 
