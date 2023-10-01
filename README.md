@@ -186,7 +186,12 @@ Before starting, ensure the following prerequisites are met:
    FLUSH PRIVILEGES;
    ```
 
-   ![MySQL Configuration Screenshot](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/0b209554-b4a3-4061-b17a-1cbf8d071296)
+   `admin` user required by the app configuration:
+
+   <p align="center">
+     <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/0b209554-b4a3-4061-b17a-1cbf8d071296" width="700px"/>
+   </p>
+
 
    > **Note:** Best practice is to store sensitive data like passwords in environment variables or a secrets management tool.
 
