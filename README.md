@@ -118,7 +118,7 @@ For the necessary application files, refer to the following links:
 
 To acquire these files, clone the current repository using the command:
 ```bash
-git clone https://github.com/otammato/FullStack_NodeJS_MySql_Docker.git
+git clone https://github.com/otam-mato/nodejs_mysql_web_app_docker.git
 ```
 
 ## Prerequisites
