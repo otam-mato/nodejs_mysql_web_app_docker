@@ -147,7 +147,7 @@ Before starting, ensure the following prerequisites are met:
 
 - **Navigate to `web_app_files/containers/mysql/`**
 
-**1.2. Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile). Name it `Dockerfile` (no extension).**
+- **Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile). Name it `Dockerfile` (no extension).**
 
    ```yaml
    FROM mysql:8.0.23
@@ -155,17 +155,17 @@ Before starting, ensure the following prerequisites are met:
    EXPOSE 3306
    ```
 
-   - The Dockerfile configuration utilizes the `mysql:8.0.23` image.
-   - It copies the `my_sql.sql` database backup to the `/docker-entrypoint-initdb.d/` directory inside the container.
-   - Port 3306 is exposed.
+   * The Dockerfile configuration utilizes the `mysql:8.0.23` image.
+   * It copies the `my_sql.sql` database backup to the `/docker-entrypoint-initdb.d/` directory inside the container.
+   * Port 3306 is exposed.
 
-1.3. Build a Docker image with the tag "my-sql-test":
+- **Build a Docker image with the tag "my-sql-test":**
 
    ```bash
    sudo docker build --tag my-sql-test .
    ```
 
-1.4. Run a Docker container for the MySQL server:
+- **Run a Docker container for the MySQL server:**
 
    ```bash
    export MYSQL_ROOT_PASSWORD=yoursecretpasswordhere
@@ -175,19 +175,19 @@ Before starting, ensure the following prerequisites are met:
    sudo docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD -d my-sql-test
    ```
 
-1.5. Discover the running MySQL container's IP:
+- **Discover the running MySQL container's IP:**
 
    ```bash
    sudo docker inspect network bridge
    ```
 
-1.6. Connect to the MySQL database server using the MySQL command-line client:
+- **Connect to the MySQL database server using the MySQL command-line client:**
 
    ```bash
    mysql -h <MySQL_Container_IP> -P 3306 -u root -p
    ```
 
-1.7. Create a user named 'admin' with the password `12345678`, grant all privileges, and flush privileges:
+- **Create a user named 'admin' with the password `12345678`, grant all privileges, and flush privileges:**
 
    ```sql
    CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
