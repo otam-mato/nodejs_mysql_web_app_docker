@@ -85,6 +85,8 @@ Follow these steps for successful implementation:
 3. [**Test the App**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#3-test-the-app)
 4. [**Push the Images to Docker Hub**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#4-push-the-images-to-docker-hub)
 
+<br>
+
 ## Screenshots
 
 <p align="center">
