@@ -196,7 +196,7 @@ Before starting, ensure the following prerequisites are met:
 
 2.1. Navigate to `web_app_files/containers/node_app/codebase_partner`.
 
-2.2. Create or download the Docker [file](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/0a752e41bfab83f616d35690a52de4a537821928/web_app_files/containers/node_app/codebase_partner/Dockerfile). Name it `Dockerfile` (no extension).
+2.2. Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/fbc8938ee485438f3e7454c2742fc4ca15933a72/web_app_files/containers/node_app/codebase_partner/Dockerfile). Name it `Dockerfile` (no extension).
 
    ```yaml
    FROM node:11-alpine
