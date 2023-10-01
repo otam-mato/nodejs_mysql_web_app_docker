@@ -109,14 +109,14 @@ Follow these steps for successful implementation:
   <img src="https://github.com/otam-mato/nodejs_mysql_web_app_terraform/assets/113034133/e4ade4f4-25f4-4481-9559-e6f9329ca459" width="700px"/>
 </p>
 
-## Application Files
+## Docker Files
 
 For the necessary application files, refer to the following links:
-1. [MySQL Container Configuration](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/tree/57e06b38dcba8179fc8b0ee8757b5d94c5a3a0de/web_app_files/containers/mysql)
-2. [Node.js App Container Configuration](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/tree/04dd0fa47f8d01361dc133664129347503f2d292/web_app_files/containers/node_app/codebase_partner)
+1. [MySQL Container Configuration](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile)
+2. [Node.js App Container Configuration](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/fbc8938ee485438f3e7454c2742fc4ca15933a72/web_app_files/containers/node_app/codebase_partner/Dockerfile)
 3. [Database Backup](https://github.com/otammato/FullStack_NodeJS_MySql_Docker/blob/ac9468edb44f095392065d7f610fb62e73c78ea0/web_app_files/resources/my_sql.sql)
 
-To acquire these files, clone the current repository using the command:
+To acquire all the app these files, clone the current repository using the command:
 ```bash
 git clone https://github.com/otam-mato/nodejs_mysql_web_app_docker.git
 ```
@@ -125,7 +125,7 @@ git clone https://github.com/otam-mato/nodejs_mysql_web_app_docker.git
 
 Before starting, ensure the following prerequisites are met:
 
-1. Launch an EC2 instance (recommended OS: Ubuntu 22.04).
+1. Launch an EC2 instance (I am using Ubuntu 22.04).
 2. Open port 3000 to access the application.
 3. Install Docker on the EC2 instance using:
    ```bash
