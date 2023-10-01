@@ -168,7 +168,11 @@ Before starting, ensure the following prerequisites are met:
 1.4. Run a Docker container for the MySQL server:
 
    ```bash
-   sudo docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=12345678 -d my-sql-test
+   export MYSQL_ROOT_PASSWORD=mysecretpassword
+   ```
+
+   ```bash
+   sudo docker run --name mysql_1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD -d my-sql-test
    ```
 
 1.5. Discover the running MySQL container's IP:
