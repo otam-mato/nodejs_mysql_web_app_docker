@@ -120,6 +120,7 @@ Clone the full current repository using the command:
 ```bash
 git clone https://github.com/otam-mato/nodejs_mysql_web_app_docker.git
 ```
+<br>
 
 ## Prerequisites
 
@@ -135,6 +136,8 @@ Before starting, ensure the following prerequisites are met:
    ```bash
    sudo apt-get install mariadb-client-core-10.6
    ```
+
+<br>
 
 ## 1. MySQL Containerized Server
 
