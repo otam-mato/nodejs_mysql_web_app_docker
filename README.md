@@ -197,6 +197,8 @@ Before starting, ensure the following prerequisites are met:
    > 
    > This configuration is used to launch the app for testing. However, the app's logic suggests you can provide different environment variables along with the command 'npm start' when the app started.
 
+<br>
+
 ## 2. Node.js App Containerized Server
 
 ### Configuration
@@ -243,6 +245,8 @@ Before starting, ensure the following prerequisites are met:
    ```bash
    docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST=<MySQL_Container_IP> node_app
    ```
+
+<br>
 
 ## 3. Test the App
 
