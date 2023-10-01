@@ -6,7 +6,7 @@
 
 > **Note:** This is part of a series of demo projects in which I manipulate a Node.js application using various technologies.<br>
 >
-> The current installment involves deploying the web app via Docker. The app built using Node.js and Express, originally presented at this [GitHub Repository](https://github.com/otam-mato/nodejs_mysql_web_app_terraform.git). The previous deployment was on EC2 and RDS instances.
+> The current installment involves deploying the web app with Docker. The app built using Node.js and Express, originally presented at this [GitHub Repository](https://github.com/otam-mato/nodejs_mysql_web_app_terraform.git). The previous deployment was on EC2 and RDS instances.
 <br>
 
 ## Deployment Strategy
