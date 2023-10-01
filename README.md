@@ -178,7 +178,7 @@ Before starting, ensure the following prerequisites are met:
    mysql -h <MySQL_Container_IP> -P 3306 -u root -p
    ```
 
-1.7. Create a user named `admin` with the password `12345678`, grant all privileges, and flush privileges:
+1.7. Create a user named 'admin' with the password `12345678`, grant all privileges, and flush privileges:
 
    ```sql
    CREATE USER 'admin'@'%' IDENTIFIED BY '12345678';
@@ -186,14 +186,16 @@ Before starting, ensure the following prerequisites are met:
    FLUSH PRIVILEGES;
    ```
 
-   `admin` user required by the app configuration:
+   'admin' user required by the app configuration:
 
    <p align="center">
      <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/0b209554-b4a3-4061-b17a-1cbf8d071296" width="700px"/>
    </p>
 
 
-   > **Note:** Best practice is to store sensitive data like passwords in environment variables or a secrets management tool.
+   > **Note:** Best practice to store sensitive data like passwords is in environment variables or a secrets management tool.
+   > 
+   > This configuration is used to launch the app for testing. However, you can provide different environment variables along with the command 'npm start'
 
 ## 2. Node.js App Containerized Server
 
