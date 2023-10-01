@@ -145,7 +145,7 @@ Before starting, ensure the following prerequisites are met:
 
 ### Configuration
 
-1.1. Navigate to `web_app_files/containers/mysql/`.
+1.1. Navigate to `web_app_files/containers/mysql/`
 
 1.2. Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile). Name it `Dockerfile` (no extension).
 
