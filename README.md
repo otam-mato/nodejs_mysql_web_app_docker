@@ -145,9 +145,9 @@ Before starting, ensure the following prerequisites are met:
 
 ### Configuration
 
-1.1. Navigate to `web_app_files/containers/mysql/`
+- **Navigate to `web_app_files/containers/mysql/`**
 
-1.2. Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile). Name it `Dockerfile` (no extension).
+**1.2. Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile). Name it `Dockerfile` (no extension).**
 
    ```yaml
    FROM mysql:8.0.23
@@ -212,9 +212,9 @@ Before starting, ensure the following prerequisites are met:
 
 ### Configuration
 
-2.1. Navigate to `web_app_files/containers/node_app/codebase_partner`.
+- **Navigate to `web_app_files/containers/node_app/codebase_partner`.**
 
-2.2. Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/fbc8938ee485438f3e7454c2742fc4ca15933a72/web_app_files/containers/node_app/codebase_partner/Dockerfile). Name it `Dockerfile` (no extension).
+- **Create or download the Docker [file](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/fbc8938ee485438f3e7454c2742fc4ca15933a72/web_app_files/containers/node_app/codebase_partner/Dockerfile). Name it `Dockerfile` (no extension).**
 
    ```yaml
    FROM node:11-alpine
@@ -231,25 +231,25 @@ Before starting, ensure the following prerequisites are met:
 
 3000, and specifies the command to start the Node.js application.
 
-2.3. Build the Docker image:
+- **Build the Docker image:**
 
    ```bash
    docker build --tag node_app .
    ```
 
-2.4. Identify the MySQL container's `<container_id>`:
+- **Identify the MySQL container's `<container_id>`:**
 
    ```bash
    docker ps
    ```
 
-2.5. Discover the running MySQL container's IP:
+- **Discover the running MySQL container's IP:**
 
    ```bash
    docker inspect network bridge
    ```
 
-2.6. Run a Docker container for the Node.js application:
+- **Run a Docker container for the Node.js application:**
 
    ```bash
    docker run -d --name node_app_1 -p 3000:3000 -e APP_DB_HOST=<MySQL_Container_IP> node_app
@@ -259,13 +259,13 @@ Before starting, ensure the following prerequisites are met:
 
 ## 3. Test the App
 
-- Discover the running containers' IPs:
+- **Discover the running containers' IPs:**
 
    ```bash
    docker inspect network bridge
    ```
 
-- Use `curl` to test the application:
+- **Use `curl` to test the application:**
 
    ```bash
    curl <Node_App_Container_IP>:3000
@@ -275,7 +275,7 @@ Before starting, ensure the following prerequisites are met:
    </p>
 
 
-- Access the app from the internet using your server's public DNS or IP.
+- **Access the app from the internet using your server's public DNS or IP.**
 
    <p align="center">
      <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa" width="700px"/>
@@ -283,7 +283,7 @@ Before starting, ensure the following prerequisites are met:
 
 ## 4. Push the Images to Docker Hub
 
-4.1. Log in to Docker Hub:
+- **Log in to Docker Hub:**
 
    ```bash
    docker login
@@ -292,7 +292,7 @@ Before starting, ensure the following prerequisites are met:
      <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/fe5f189e-b9fb-48db-a940-b005f84be7e0" width="700px"/>
    </p>
 
-4.2. View Docker images:
+- **View Docker images:**
 
    ```bash
    docker images
@@ -303,25 +303,25 @@ Before starting, ensure the following prerequisites are met:
    </p>
 
 
-4.3. Tag the MySQL container image:
+- **Tag the MySQL container image:**
 
    ```bash
    docker tag <MySQL_Image_ID> montcarotte/fullstack_nodejs_mysql_demo:mysql_server
    ```
 
-4.4. Tag the Node.js app container image:
+- **Tag the Node.js app container image:**
 
    ```bash
    docker tag <Node_App_Image_ID> montcarotte/fullstack_nodejs_mysql_demo:node_app
    ```
 
-4.5. Push the MySQL container image:
+- **Push the MySQL container image:**
 
    ```bash
    docker push montcarotte/fullstack_nodejs_mysql_demo:mysql_server
    ```
 
-4.6. Push the Node.js app container image:
+- **Push the Node.js app container image:**
 
    ```bash
    docker push montcarotte/fullstack_nodejs_mysql_demo:node_app
