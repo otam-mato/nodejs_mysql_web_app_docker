@@ -259,13 +259,13 @@ Before starting, ensure the following prerequisites are met:
 
 ## 3. Test the App
 
-3.1. Discover the running containers' IPs:
+- Discover the running containers' IPs:
 
    ```bash
    docker inspect network bridge
    ```
 
-3.2. Use `curl` to test the application:
+- Use `curl` to test the application:
 
    ```bash
    curl <Node_App_Container_IP>:3000
@@ -275,7 +275,7 @@ Before starting, ensure the following prerequisites are met:
    </p>
 
 
-3.3. Access the app from the internet using your server's public DNS or IP.
+- Access the app from the internet using your server's public DNS or IP.
 
    <p align="center">
      <img src="https://github.com/otammato/FullStack_NodeJS_MySql_Docker/assets/104728608/ccab549a-0045-489b-9ff8-02de5ef921fa" width="700px"/>
