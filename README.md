@@ -82,10 +82,10 @@ The Main Solution:
 
 Follow these steps for successful implementation:
 
-1. **Launch MySQL Containerized Server**: Set up a containerized MySQL server.
-2. **Launch Node.js App Containerized Server**: Set up a containerized Node.js application server.
-3. **Test the App**: Verify the application's functionality.
-4. **Push the Images to Docker Hub**: Store Docker images for future use.
+1. [**Launch MySQL Containerized Server**](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/main/README.md#1-mysql-containerized-server)
+2. [**Launch Node.js App Containerized Server**](Set up a containerized Node.js application server)
+3. [**Test the App**]()
+4. [**Push the Images to Docker Hub**]()
 
 ## Screenshots
 
