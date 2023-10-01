@@ -113,7 +113,7 @@ Follow these steps for successful implementation:
 
 ## Docker Files
 
-Files needed to build containers:
+Files necessary to build containers:
 1. [MySQL Container Configuration](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/9228e0d9c7c12bc98d12fbb947098d40263f550e/web_app_files/containers/mysql/Dockerfile)
 2. [Node.js App Container Configuration](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/fbc8938ee485438f3e7454c2742fc4ca15933a72/web_app_files/containers/node_app/codebase_partner/Dockerfile)
 3. [Database Backup](https://github.com/otam-mato/nodejs_mysql_web_app_docker/blob/47e2793ef94b0692793a5a2483fab51892bba144/web_app_files/containers/mysql/my_sql.sql)
