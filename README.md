@@ -1,4 +1,4 @@
-[the page is under revision]
+
 
 # Node.JS + MySQL Web App. Dockerized.
 
